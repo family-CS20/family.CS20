@@ -6,174 +6,195 @@
 <title>Analisa XAUUSD | Family CS20</title>
 
 <style>
-  .container{
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0b1220;
+    color:#fff;
+}
+
+header{
+    background:#111827;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.4);
+}
+
+header h1{
+    color:gold;
+    font-size:32px;
+}
+
+.container{
     width:90%;
-    max-width:1000px;
-    margin:40px auto;
+    max-width:1100px;
+    margin:auto;
+    padding:40px 0;
+}
+
+h2{
+    color:gold;
+    text-align:center;
+    margin-bottom:25px;
 }
 
 .card{
-    background:#1a1a1a;
-    padding:20px;
-    margin-bottom:20px;
-    border-radius:15px;
+    background:#1e293b;
     border-left:5px solid gold;
-    box-shadow:0 0 10px rgba(255,215,0,.2);
+    border-radius:15px;
+    padding:25px;
+    margin-bottom:25px;
+    transition:.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 20px rgba(255,215,0,.25);
 }
 
 .card h3{
     color:gold;
-    margin-bottom:10px;
+    margin-bottom:15px;
 }
 
 .card p{
-    color:white;
     line-height:1.8;
+    margin-bottom:8px;
 }
 
-h2{
-    margin:30px 0;
-    color:gold;
-}
-body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#0b1220;
-color:white;
-}
-
-header{
-background:#111827;
-padding:20px;
-text-align:center;
-}
-
-header h1{
-color:gold;
-}
-
-.container{
-width:90%;
-max-width:1100px;
-margin:auto;
-padding:40px 0;
-}
-
-.card{
-background:#1e293b;
-padding:25px;
-border-radius:15px;
-margin-bottom:25px;
-}
-
-h2{
-color:gold;
-}
-
-table{
-width:100%;
-border-collapse:collapse;
-margin-top:15px;
-}
-
-table td{
-border:1px solid #333;
-padding:12px;
+.tradingview-widget-container{
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 0 20px rgba(255,215,0,.15);
+    margin-bottom:35px;
 }
 
 .btn{
-display:inline-block;
-padding:12px 25px;
-background:gold;
-color:black;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
-margin-top:20px;
+    display:inline-block;
+    padding:14px 28px;
+    background:gold;
+    color:#000;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#ffd700;
+    transform:scale(1.05);
+}
+
+.footer-btn{
+    text-align:center;
+    padding-bottom:40px;
+}
+
+@media(max-width:768px){
+
+header h1{
+    font-size:26px;
+}
+
+.card{
+    padding:20px;
+}
+
 }
 </style>
 
 </head>
-
 <body>
- 
-<h1>Analisa XAUUSD Hari Ini</h1>
+
+<header>
+    <h1>📈 Analisa XAUUSD Hari Ini</h1>
 </header>
 
 <div class="container">
+
     <div class="card">
-        <h3>📈 Ringkasan Market</h3>
-        <p><strong>Trend:</strong> Bullish</p>
-        <p><strong>Bias:</strong> Buy on Dip</p>
-        <p><strong>Timeframe:</strong> H1</p>
-        <p><strong>Update:</strong> 7 Juli 2026</p>
+        <h3>📊 Ringkasan Market</h3>
+
+        <p><strong>Trend :</strong> Bullish</p>
+        <p><strong>Bias :</strong> Buy on Dip</p>
+        <p><strong>Timeframe :</strong> H1</p>
+        <p><strong>Update :</strong> 7 Juli 2026</p>
     </div>
+
+    <h2>Live Chart XAUUSD</h2>
+
+    <div class="tradingview-widget-container">
+
+        <div id="tradingview_chart"></div>
+
+        <script src="https://s3.tradingview.com/tv.js"></script>
+
+        <script>
+        new TradingView.widget({
+            width:"100%",
+            height:600,
+            symbol:"OANDA:XAUUSD",
+            interval:"15",
+            timezone:"Asia/Jakarta",
+            theme:"dark",
+            style:"1",
+            locale:"id",
+            toolbar_bg:"#111827",
+            enable_publishing:false,
+            allow_symbol_change:true,
+            container_id:"tradingview_chart"
+        });
+        </script>
+
+    </div>
+
+    <h2>📈 Analisa Hari Ini</h2>
+
+    <div class="card">
+        <h3>Trend Utama</h3>
+        <p><strong>Bullish</strong></p>
+        <p>Harga masih berada di atas area support sehingga peluang kenaikan masih terbuka.</p>
+    </div>
+
+    <div class="card">
+        <h3>Support</h3>
+        <p>3345.00</p>
+    </div>
+
+    <div class="card">
+        <h3>Resistance</h3>
+        <p>3375.00</p>
+    </div>
+
+    <div class="card">
+        <h3>Skenario Buy</h3>
+        <p>Buy jika harga bertahan di atas area support dan muncul candle bullish sebagai konfirmasi.</p>
+    </div>
+
+    <div class="card">
+        <h3>Skenario Sell</h3>
+        <p>Sell jika harga berhasil menembus support disertai candle bearish yang kuat.</p>
+    </div>
+
+    <div class="card">
+        <h3>⚠ Disclaimer</h3>
+        <p>
+            Analisa ini hanya untuk tujuan edukasi dan bukan merupakan ajakan membeli maupun menjual.
+            Selalu gunakan Money Management dan Risk Management sebelum melakukan trading.
+        </p>
+    </div>
+
 </div>
 
-<h2 style="text-align:center; color:gold;">Live Chart XAUUSD</h2>
-<div class="tradingview-widget-container">
-  <div id="tradingview_chart"></div>
-
-  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-
-  <script type="text/javascript">
-  new TradingView.widget({
-      "width": "100%",
-      "height": 600,
-      "symbol": "OANDA:XAUUSD",
-      "interval": "15",
-      "timezone": "Asia/Jakarta",
-      "theme": "dark",
-      "style": "1",
-      "locale": "id",
-      "toolbar_bg": "#111827",
-      "enable_publishing": false,
-      "allow_symbol_change": true,
-      "container_id": "tradingview_chart"
-  });
-  </script>
-</div><section class="container">
-
-<h2>📊 Analisa XAUUSD Hari Ini</h2>
-
-<div class="card">
-<h3>Trend Utama</h3>
-<p><strong>Bullish</strong></p>
-<p>Harga masih berada di atas area support sehingga peluang kenaikan masih terbuka.</p>
-</div>
-
-<div class="card">
-<h3>Support</h3>
-<p>3345.00</p>
-</div>
-
-<div class="card">
-<h3>Resistance</h3>
-<p>3375.00</p>
-</div>
-
-<div class="card">
-<h3>Skenario Buy</h3>
-<p>Buy jika harga berhasil bertahan di atas support dan muncul candle bullish.</p>
-</div>
-
-<div class="card">
-<h3>Skenario Sell</h3>
-<p>Sell jika harga menembus support dengan candle kuat.</p>
-</div>
-<div class="card">
-<h3>⚠ Disclaimer</h3>
-
-<p>
-Analisa ini hanya untuk edukasi dan bukan merupakan ajakan membeli atau menjual.
-Selalu gunakan Money Management sebelum melakukan trading.
-</p>
-
-</div>
-</section>
-  <div style="text-align:center;margin:40px;">
+<div class="footer-btn">
     <a href="index.html" class="btn">🏠 Kembali ke Home</a>
 </div>
-</body>
 
+</body>
 </html>
