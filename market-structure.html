@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -15,12 +16,13 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
 background:#08111f;
 color:white;
-line-height:1.7;
+line-height:1.8;
 }
 
 header{
@@ -31,6 +33,7 @@ padding:20px 10%;
 background:#0d1626;
 position:sticky;
 top:0;
+z-index:999;
 }
 
 .logo{
@@ -43,6 +46,7 @@ nav a{
 color:white;
 text-decoration:none;
 margin-left:22px;
+transition:.3s;
 }
 
 nav a:hover{
@@ -50,52 +54,61 @@ color:#ffd700;
 }
 
 .hero{
-padding:80px 10%;
+padding:90px 10%;
 text-align:center;
-background:#111d31;
+background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url("https://images.unsplash.com/photo-1642790106117-e829e14a795f?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
 }
 
 .hero h1{
-font-size:50px;
+font-size:55px;
 color:#ffd700;
 margin-bottom:20px;
 }
 
 .hero p{
-max-width:800px;
+max-width:850px;
 margin:auto;
-color:#ddd;
-font-size:18px;
+font-size:20px;
+color:#e5e7eb;
 }
 
 .content{
-max-width:1000px;
-margin:50px auto;
-padding:0 20px;
+max-width:1100px;
+margin:auto;
+padding:60px 20px;
 }
 
 .card{
 background:#111d31;
-padding:30px;
-border-radius:15px;
-margin-bottom:30px;
+padding:35px;
+border-radius:18px;
+margin-bottom:35px;
+box-shadow:0 8px 25px rgba(0,0,0,.25);
 }
 
 .card h2{
 color:#ffd700;
-margin-bottom:15px;
+margin-bottom:18px;
 }
+
 .card h3{
 color:#ffd700;
 margin-top:20px;
 margin-bottom:10px;
-font-size:22px;
+}
+
+.card p{
+color:#d1d5db;
+margin-bottom:15px;
 }
 
 .card ul{
-margin-left:20px;
+margin-left:25px;
 margin-top:10px;
-margin-bottom:10px;
+margin-bottom:15px;
 }
 
 .card li{
@@ -108,22 +121,69 @@ height:1px;
 background:#2d3748;
 margin:25px 0;
 }
+
+.img-box{
+margin:25px 0;
+text-align:center;
+}
+
+.img-box img{
+width:100%;
+border-radius:15px;
+}
+
+.caption{
+margin-top:10px;
+font-size:15px;
+color:#9ca3af;
+}
+
+.btn{
+display:inline-block;
+padding:14px 30px;
+background:#ffd700;
+color:black;
+font-weight:bold;
+text-decoration:none;
+border-radius:8px;
+margin-top:25px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
 footer{
 background:#050b16;
 padding:30px;
 text-align:center;
 margin-top:40px;
+color:#cbd5e1;
 }
 
-.btn{
-display:inline-block;
-margin-top:25px;
-padding:12px 25px;
-background:#ffd700;
-color:black;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:15px;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+.card{
+padding:25px;
+}
+
 }
 
 </style>
@@ -157,14 +217,15 @@ font-weight:bold;
 <h1>📈 Market Structure</h1>
 
 <p>
-
-Pelajari pondasi utama dalam membaca arah market sebelum melakukan entry trading.
-
+Pelajari pondasi utama membaca arah market sebelum melakukan entry trading.
 </p>
 
 </section>
 
 <div class="content">
+    <!-- ========================= -->
+<!-- APA ITU MARKET STRUCTURE -->
+<!-- ========================= -->
 
 <div class="card">
 
@@ -173,8 +234,9 @@ Pelajari pondasi utama dalam membaca arah market sebelum melakukan entry trading
 <h3>🎯 Tujuan Belajar</h3>
 
 <p>
-Setelah mempelajari materi ini, Anda akan mampu mengenali arah trend market
-sehingga dapat menentukan apakah peluang terbaik adalah Buy, Sell, atau menunggu.
+Market Structure adalah pondasi utama dalam trading. Dengan memahami struktur market,
+trader dapat mengetahui apakah harga sedang naik, turun, atau bergerak mendatar
+sebelum melakukan entry.
 </p>
 
 <hr>
@@ -182,11 +244,9 @@ sehingga dapat menentukan apakah peluang terbaik adalah Buy, Sell, atau menunggu
 <h3>📚 Pengertian</h3>
 
 <p>
-Market Structure adalah cara membaca arah pergerakan harga berdasarkan
-susunan <strong>Swing High</strong> dan <strong>Swing Low</strong>.
-
-Dengan memahami struktur market, seorang trader dapat mengetahui apakah
-market sedang Bullish, Bearish, atau Sideways sebelum melakukan entry.
+Market Structure adalah susunan Swing High dan Swing Low yang membentuk sebuah trend.
+Semua analisa Price Action maupun Smart Money Concept selalu diawali dari membaca
+Market Structure.
 </p>
 
 <hr>
@@ -194,223 +254,359 @@ market sedang Bullish, Bearish, atau Sideways sebelum melakukan entry.
 <h3>📌 Mengapa Market Structure Penting?</h3>
 
 <ul>
-<li>✅ Menentukan arah trend utama.</li>
-<li>✅ Membantu mencari entry dengan probabilitas lebih tinggi.</li>
-<li>✅ Mengurangi entry melawan trend.</li>
-<li>✅ Menjadi dasar Smart Money Concept dan Price Action.</li>
+<li>✅ Mengetahui arah trend.</li>
+<li>✅ Menghindari entry melawan trend.</li>
+<li>✅ Menentukan area Buy dan Sell.</li>
+<li>✅ Dasar Smart Money Concept.</li>
+<li>✅ Dasar Supply & Demand.</li>
 </ul>
 
-<hr>
+<div class="img-box">
 
-<h3>💡 Tips Trading</h3>
+<img src="assets/images/market-structure.png" alt="Market Structure">
 
-<p>
-Biasakan melihat Market Structure terlebih dahulu sebelum membuka posisi.
-Jangan hanya entry karena melihat satu candle atau satu indikator.
-</p>
-
-<hr>
-
-<h3>⚠ Kesalahan Pemula</h3>
-
-<ul>
-<li>❌ Langsung entry tanpa melihat trend.</li>
-<li>❌ Melawan arah market.</li>
-<li>❌ Tidak mengetahui perbedaan Bullish dan Bearish.</li>
-</ul>
-
-<hr>
-
-<h3>📝 Kesimpulan</h3>
-
-<p>
-Market Structure merupakan pondasi utama dalam trading.
-Jika sudah memahami materi ini, Anda akan lebih mudah mempelajari
-Price Action, Supply & Demand, maupun Smart Money Concept.
+<p class="caption">
+Contoh struktur market secara umum.
 </p>
 
 </div>
+
+</div>
+
+<!-- ========================= -->
+<!-- BULLISH -->
+<!-- ========================= -->
+
+<div class="card">
+
+<h2>📈 Bullish Market Structure</h2>
+
+<p>
+
+Bullish terjadi ketika harga membentuk
+<strong>Higher High (HH)</strong> dan
+<strong>Higher Low (HL)</strong>.
+
+Artinya buyer masih menguasai market sehingga peluang terbaik adalah mencari setup Buy.
+
+</p>
+
+<div class="img-box">
+
+<img src="assets/images/bullish-market-structure.png" alt="Bullish">
+
+<p class="caption">
+Higher High dan Higher Low membentuk trend naik.
+</p>
+
+</div>
+
+<ul>
+
+<li>✅ Higher High</li>
+
+<li>✅ Higher Low</li>
+
+<li>✅ Trend Naik</li>
+
+<li>✅ Fokus Buy</li>
+
+</ul>
+
+</div>
+
+<!-- ========================= -->
+<!-- BEARISH -->
+<!-- ========================= -->
+
+<div class="card">
+
+<h2>📉 Bearish Market Structure</h2>
+
+<p>
+
+Bearish terjadi ketika harga membentuk
+<strong>Lower High (LH)</strong>
+dan
+<strong>Lower Low (LL)</strong>.
+
+Seller menguasai market sehingga peluang terbaik adalah mencari Sell.
+
+</p>
+
+<div class="img-box">
+
+<img src="assets/images/bearish-market-structure.png" alt="Bearish">
+
+<p class="caption">
+Lower High dan Lower Low membentuk trend turun.
+</p>
+
+</div>
+
+<ul>
+
+<li>✅ Lower High</li>
+
+<li>✅ Lower Low</li>
+
+<li>✅ Trend Turun</li>
+
+<li>✅ Fokus Sell</li>
+
+</ul>
+
+</div>
+
+<!-- ========================= -->
+<!-- SIDEWAYS -->
+<!-- ========================= -->
+
 <div class="card">
 
 <h2>🟡 Sideways Market Structure</h2>
 
 <p>
-Sideways adalah kondisi ketika harga bergerak dalam area support dan resistance tanpa membentuk trend yang jelas.
+
+Sideways adalah kondisi ketika harga bergerak di dalam area Support dan Resistance
+tanpa membentuk trend yang jelas.
+
 </p>
 
+<div class="img-box">
+
+<img src="assets/images/sideways-market-structure.png" alt="Sideways">
+
+<p class="caption">
+Harga bergerak di dalam range.
+</p>
+
+</div>
+
 <ul>
-<li>✅ Harga bergerak dalam range</li>
-<li>✅ Buyer dan seller seimbang</li>
-<li>✅ Buy di support</li>
-<li>✅ Sell di resistance</li>
-<li>✅ Tunggu breakout untuk mengikuti trend baru</li>
+
+<li>✅ Buy di Support</li>
+
+<li>✅ Sell di Resistance</li>
+
+<li>✅ Tunggu Breakout</li>
+
 </ul>
 
 </div>
-    </div>
 
-    <div class="card">
+<!-- ========================= -->
+<!-- MAJOR & MINOR -->
+<!-- ========================= -->
 
-        <h2>📈 Bullish Market Structure</h2>
+<div class="card">
 
-        <p>
-        Bullish Market Structure adalah kondisi ketika harga terus membentuk
-        <strong>Higher High (HH)</strong> dan
-        <strong>Higher Low (HL)</strong>.
-        Hal ini menunjukkan bahwa pembeli masih menguasai pasar sehingga peluang kenaikan harga lebih besar.
-        </p>
+<h2>⭐ Major & Minor Market Structure</h2>
 
-        <ul>
-            <li>✅ Higher High (HH)</li>
-<div class="content">
+<p>
 
-    <!-- Apa itu Market Structure -->
-    <div class="card">
+Major Structure adalah trend utama.
 
-        <h2>📖 Apa itu Market Structure?</h2>
+Minor Structure adalah koreksi yang terjadi di dalam trend utama.
 
-        <h3>🎯 Tujuan Belajar</h3>
+Trader profesional selalu mengikuti Major Structure dan menggunakan Minor Structure
+untuk mendapatkan entry terbaik.
 
-        <p>
-        Setelah mempelajari materi ini, Anda akan mampu mengenali arah trend market
-        sehingga dapat menentukan apakah peluang terbaik adalah Buy, Sell, atau menunggu.
-        </p>
+</p>
 
-        <hr>
+<div class="img-box">
 
-        <h3>📚 Pengertian</h3>
+<img src="assets/images/major-minor-structure.png" alt="Major Minor">
 
-        <p>
-        Market Structure adalah cara membaca arah pergerakan harga berdasarkan
-        susunan <strong>Swing High</strong> dan <strong>Swing Low</strong>.
-        Dengan memahami struktur market, trader dapat mengetahui apakah market
-        sedang Bullish, Bearish, atau Sideways sebelum melakukan entry.
-        </p>
+<p class="caption">
+Perbedaan Major dan Minor Structure.
+</p>
 
-        <hr>
+</div>
 
-        <h3>📌 Mengapa Market Structure Penting?</h3>
+</div>
 
-        <ul>
-            <li>✅ Menentukan arah trend utama.</li>
-            <li>✅ Membantu mencari entry dengan probabilitas lebih tinggi.</li>
-            <li>✅ Mengurangi entry melawan trend.</li>
-            <li>✅ Menjadi dasar Price Action dan Smart Money Concept.</li>
-        </ul>
+<!-- ========================= -->
+<!-- BOS -->
+<!-- ========================= -->
 
-        <hr>
+<div class="card">
 
-        <h3>💡 Tips Trading</h3>
+<h2>🔥 Break of Structure (BOS)</h2>
 
-        <p>
-        Biasakan melihat Market Structure terlebih dahulu sebelum membuka posisi.
-        Jangan hanya entry karena melihat satu candle atau indikator.
-        </p>
+<p>
 
-        <hr>
+Break of Structure terjadi ketika harga berhasil menembus Swing High atau Swing Low
+terakhir sehingga mengonfirmasi trend masih berlanjut.
 
-        <h3>⚠ Kesalahan Pemula</h3>
+</p>
 
-        <ul>
-            <li>❌ Langsung entry tanpa melihat trend.</li>
-            <li>❌ Melawan arah market.</li>
-            <li>❌ Tidak memahami Higher High dan Lower Low.</li>
-        </ul>
+<div class="img-box">
 
-        <hr>
+<img src="assets/images/bos.png" alt="BOS">
 
-        <h3>📝 Kesimpulan</h3>
+<p class="caption">
+Contoh Break of Structure.
+</p>
 
-        <p>
-        Market Structure merupakan pondasi utama dalam trading.
-        Jika memahami materi ini, maka Price Action, Supply & Demand,
-        dan Smart Money Concept akan jauh lebih mudah dipelajari.
-        </p>
+</div>
 
-    </div>
+</div>
 
-    <!-- Bullish -->
-    <div class="card">
+<!-- ========================= -->
+<!-- CHOCH -->
+<!-- ========================= -->
 
-        <h2>📈 Bullish Market Structure</h2>
+<div class="card">
 
-        <p>
-        Bullish Market Structure terjadi ketika harga membentuk
-        <strong>Higher High (HH)</strong> dan
-        <strong>Higher Low (HL)</strong>.
-        Hal ini menunjukkan buyer masih menguasai market.
-        </p>
+<h2>🔄 Change of Character (CHoCH)</h2>
 
-        <img src="assets/images/bullish-market-structure.png"
-             alt="Bullish Market Structure"
-             style="width:100%;border-radius:12px;margin:20px 0;">
+<p>
 
-        <ul>
-            <li>✅ Higher High (HH)</li>
-            <li>✅ Higher Low (HL)</li>
-            <li>✅ Trend masih naik</li>
-            <li>✅ Fokus mencari peluang Buy</li>
-        </ul>
+CHoCH merupakan sinyal awal perubahan arah trend.
 
-    </div>
+Biasanya muncul sebelum terjadi pembalikan market.
 
-    <!-- Bearish -->
-    <div class="card">
+</p>
 
-        <h2>📉 Bearish Market Structure</h2>
+<div class="img-box">
 
-        <p>
-        Bearish Market Structure terjadi ketika harga membentuk
-        <strong>Lower High (LH)</strong> dan
-        <strong>Lower Low (LL)</strong>.
-        Hal ini menunjukkan seller masih menguasai market.
-        </p>
+<img src="assets/images/choch.png" alt="CHoCH">
 
-        <img src="assets/images/bearish-market-structure.png"
-             alt="Bearish Market Structure"
-             style="width:100%;border-radius:12px;margin:20px 0;">
+<p class="caption">
+Contoh Change of Character.
+</p>
 
-        <ul>
-            <li>✅ Lower High (LH)</li>
-            <li>✅ Lower Low (LL)</li>
-            <li>✅ Trend masih turun</li>
-            <li>✅ Fokus mencari peluang Sell</li>
-        </ul>
+</div>
 
-    </div>
+</div>
+<!-- ========================= -->
+<!-- RINGKASAN -->
+<!-- ========================= -->
 
-    <!-- Sideways -->
-    <div class="card">
+<div class="card">
 
-        <h2>🟡 Sideways Market Structure</h2>
+<h2>📝 Ringkasan Materi</h2>
 
-        <p>
-        Sideways adalah kondisi ketika harga bergerak di dalam area
-        support dan resistance tanpa arah trend yang jelas.
-        </p>
+<p>
+Sebelum melakukan entry, selalu pastikan Anda sudah mengetahui struktur market.
+Jangan terburu-buru membuka posisi hanya karena melihat satu candle atau satu indikator.
+</p>
 
-        <img src="assets/images/sideways-market-structure.png"
-             alt="Sideways Market Structure"
-             style="width:100%;border-radius:12px;margin:20px 0;">
+<ul>
+<li>✅ Bullish = Higher High + Higher Low</li>
+<li>✅ Bearish = Lower High + Lower Low</li>
+<li>✅ Sideways = Harga bergerak dalam Range</li>
+<li>✅ BOS = Trend Berlanjut</li>
+<li>✅ CHoCH = Awal Perubahan Trend</li>
+<li>✅ Selalu ikuti Major Structure</li>
+</ul>
 
-        <ul>
-            <li>✅ Harga bergerak dalam range.</li>
-            <li>✅ Buyer dan Seller seimbang.</li>
-            <li>✅ Buy di area support.</li>
-            <li>✅ Sell di area resistance.</li>
-            <li>✅ Tunggu breakout sebelum mengikuti trend baru.</li>
-        </ul>
+</div>
 
-    </div>
+<!-- ========================= -->
+<!-- TIPS -->
+<!-- ========================= -->
 
-    <a href="belajar.html" class="btn">
-        ← Kembali ke Belajar
-    </a>
+<div class="card">
 
-</div> <!-- penutup .content -->
+<h2>💡 Tips Trading</h2>
+
+<p>
+Trader profesional selalu memulai analisis dari Time Frame besar (H4 atau Daily)
+untuk melihat Major Structure, kemudian turun ke H1 atau M15 untuk mencari entry.
+Cara ini membantu menghindari entry yang melawan arah trend utama.
+</p>
+
+</div>
+
+<!-- ========================= -->
+<!-- KESALAHAN PEMULA -->
+<!-- ========================= -->
+
+<div class="card">
+
+<h2>⚠️ Kesalahan yang Sering Dilakukan Pemula</h2>
+
+<ul>
+<li>❌ Entry tanpa melihat Market Structure.</li>
+<li>❌ Buy saat market Bearish.</li>
+<li>❌ Sell saat market Bullish.</li>
+<li>❌ Menganggap semua Breakout adalah BOS.</li>
+<li>❌ Tidak membedakan Major dan Minor Structure.</li>
+</ul>
+
+</div>
+
+<!-- ========================= -->
+<!-- QUIZ -->
+<!-- ========================= -->
+
+<div class="card">
+
+<h2>📚 Quiz Singkat</h2>
+
+<p><strong>1.</strong> Jika market membentuk Higher High dan Higher Low, berarti market sedang...</p>
+
+<p>
+A. Bearish<br>
+B. Sideways<br>
+C. Bullish ✅
+</p>
+
+<hr>
+
+<p><strong>2.</strong> BOS merupakan tanda...</p>
+
+<p>
+A. Trend Berlanjut ✅<br>
+B. Sideways<br>
+C. Tidak ada trend
+</p>
+
+<hr>
+
+<p><strong>3.</strong> CHoCH biasanya menandakan...</p>
+
+<p>
+A. Awal perubahan trend ✅<br>
+B. Market libur<br>
+C. Spread melebar
+</p>
+
+</div>
+
+<!-- ========================= -->
+<!-- NAVIGASI -->
+<!-- ========================= -->
+
+<div style="display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:40px;">
+
+<a href="belajar.html" class="btn">
+⬅ Kembali ke Belajar
+</a>
+
+<a href="price-action.html" class="btn">
+Lanjut Price Action ➜
+</a>
+
+</div>
+
+</div>
 
 <footer>
 
-© 2026 Family CS20 Trading Academy
+<p><strong>Family CS20 Trading Academy</strong></p>
+
+<p>
+Belajar Trading Forex & Gold dari Dasar hingga Mahir
+</p>
+
+<p style="margin-top:10px;">
+© 2026 Family CS20. All Rights Reserved.
+</p>
 
 </footer>
+
+</body>
+</html>
