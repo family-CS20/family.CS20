@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Belajar Trading | Family CS20</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    body{background:#08111f;color:#fff;line-height:1.6}
+    header{display:flex;justify-content:space-between;align-items:center;padding:20px 10%;background:#0d1626;position:sticky;top:0;z-index:10}
+    .logo{font-size:28px;font-weight:800;color:#ffd700}
+    nav a{color:#fff;text-decoration:none;margin-left:22px;transition:.3s}
+    nav a:hover{color:#ffd700}
+    .hero{
+      min-height:70vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;
+      padding:80px 10%;
+      background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.7)),
+      url("https://images.unsplash.com/photo-1642790106117-e829e14a795f?auto=format&fit=crop&w=1600&q=80");
+      background-size:cover;background-position:center
+    }
+    .hero h1{font-size:56px;line-height:1.1}
+    .hero span{color:#ffd700}
+    .hero p{max-width:850px;margin:20px 0 32px;font-size:18px;color:#e5e7eb}
+    .btn{display:inline-block;background:#ffd700;color:#111;text-decoration:none;padding:14px 34px;border-radius:50px;font-weight:700;transition:.3s}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(255,215,0,.2)}
+    .section{padding:80px 10%}
+    .title{text-align:center;font-size:40px;margin-bottom:40px;color:#ffd700}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+    .card{background:#111d31;padding:28px;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.2);transition:.3s}
+    .card:hover{transform:translateY(-8px)}
+    .card h3{color:#ffd700;margin-bottom:12px}
+    .card p{color:#d1d5db}
+    .back{
+      display:inline-block;margin-top:20px;color:#ffd700;text-decoration:none;font-weight:700
+    }
+    footer{padding:28px;text-align:center;background:#050b16;margin-top:40px;color:#cbd5e1}
+    @media (max-width:768px){
+      header{flex-direction:column;gap:12px}
+      nav{display:flex;flex-wrap:wrap;justify-content:center}
+      nav a{margin:8px 12px}
+      .hero h1{font-size:38px}
+      .hero p{font-size:16px}
+      .title{font-size:30px}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Family CS20</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="belajar.html">Belajar</a>
+      <a href="analisa.html">Analisa</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Belajar <span>Trading</span> dengan Struktur yang Jelas</h1>
+    <p>
+      Pelajari Market Structure, Price Action, Support & Resistance, dan Smart Money Concept
+      dengan tampilan yang rapi dan mudah dipahami.
+    </p>
+    <a class="btn" href="#materi">Lihat Materi</a>
+  </section>
+
+  <section class="section" id="materi">
+    <h2 class="title">Materi Dasar Trading</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Market Structure</h3>
+        <p>Memahami trend naik, trend turun, higher high, higher low, lower high, dan lower low.</p>
+      </div>
+
+      <div class="card">
+        <h3>Price Action</h3>
+        <p>Membaca candle untuk mencari momentum entry tanpa bergantung pada banyak indikator.</p>
+      </div>
+
+      <div class="card">
+        <h3>Support & Resistance</h3>
+        <p>Menentukan area pantulan harga agar entry lebih terarah dan terukur.</p>
+      </div>
+
+      <div class="card">
+        <h3>Smart Money Concept</h3>
+        <p>Belajar melihat liquidity, order block, dan fair value gap dengan lebih sederhana.</p>
+      </div>
+    </div>
+
+    <a class="back" href="index.html">← Kembali ke Home</a>
+  </section>
+
+  <footer>
+    © 2026 Family CS20 Trading Academy
+  </footer>
+
+</body>
+</html>
