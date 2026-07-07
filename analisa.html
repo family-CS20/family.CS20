@@ -81,17 +81,14 @@ display:none;
 font-size:34px;
 cursor:pointer;
 color:#FFD700;
-    }
-header{
-    background:#111827;
-    padding:25px;
-    text-align:center;
-    box-shadow:0 5px 15px rgba(0,0,0,.4);
 }
-
-header h1{
-    color:gold;
-    font-size:32px;
+header{
+background:#111827;
+padding:15px 5%;
+position:sticky;
+top:0;
+z-index:999;
+box-shadow:0 5px 15px rgba(0,0,0,.4);
 }
 
 .container{
@@ -161,7 +158,45 @@ h2{
 }
 
 @media(max-width:768px){
+.header-container{
+position:relative;
+}
 
+.menu-toggle{
+display:block;
+margin-right:18px;
+font-size:34px;
+}
+
+.logo-text h1{
+font-size:22px;
+}
+
+.logo-text p{
+font-size:11px;
+}
+
+nav{
+display:flex;
+flex-direction:column;
+position:fixed;
+top:0;
+left:-270px;
+width:250px;
+height:100vh;
+background:#111827;
+padding-top:90px;
+transition:.35s;
+z-index:999;
+}
+
+nav.show{
+left:0;
+}
+
+nav a{
+padding:18px 25px;
+}
 header h1{
     font-size:26px;
 }
@@ -285,6 +320,21 @@ header h1{
 <div class="footer-btn">
     <a href="index.html" class="btn">🏠 Kembali ke Home</a>
 </div>
+<script>
+const menu=document.getElementById("menu");
+const toggle=document.getElementById("toggle");
 
+function toggleMenu(){
+
+menu.classList.toggle("show");
+
+if(menu.classList.contains("show")){
+toggle.innerHTML="✕";
+}else{
+toggle.innerHTML="☰";
+}
+
+}
+</script>
 </body>
 </html>
