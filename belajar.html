@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Belajar Trading | Family CS20</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
@@ -23,8 +24,6 @@ color:#fff;
 line-height:1.6;
 }
 
-/* ===== HEADER ===== */
-
 header{
 background:#0d1626;
 padding:15px 5%;
@@ -35,11 +34,11 @@ box-shadow:0 5px 15px rgba(0,0,0,.4);
 }
 
 .header-container{
-display:flex;
-justify-content:space-between;
-align-items:center;
 max-width:1300px;
 margin:auto;
+display:flex;
+align-items:center;
+justify-content:space-between;
 position:relative;
 }
 
@@ -59,18 +58,15 @@ border:2px solid #FFD700;
 .logo-text h1{
 font-size:28px;
 color:#FFD700;
-margin:0;
 }
 
 .logo-text p{
 font-size:13px;
 margin-top:3px;
-color:#fff;
 }
 
 nav{
 display:flex;
-align-items:center;
 gap:35px;
 margin-left:auto;
 }
@@ -79,24 +75,24 @@ nav a{
 color:#fff;
 text-decoration:none;
 font-weight:600;
-position:relative;
 transition:.3s;
+position:relative;
+}
+
+nav a:hover,
+nav a.active{
+color:#FFD700;
 }
 
 nav a::after{
 content:"";
 position:absolute;
 left:0;
-bottom:-6px;
+bottom:-5px;
 width:0;
 height:2px;
 background:#FFD700;
 transition:.3s;
-}
-
-nav a:hover,
-nav a.active{
-color:#FFD700;
 }
 
 nav a:hover::after,
@@ -109,9 +105,6 @@ display:none;
 font-size:34px;
 cursor:pointer;
 color:#FFD700;
-width:40px;
-text-align:center;
-user-select:none;
 z-index:1002;
 }
 
@@ -129,8 +122,7 @@ z-index:998;
 #overlay.show{
 display:block;
 }
-
-/* ===== HERO ===== */
+  /* ===== HERO ===== */
 
 .hero{
 min-height:70vh;
@@ -149,6 +141,7 @@ background-position:center;
 
 .hero h1{
 font-size:56px;
+margin-bottom:20px;
 }
 
 .hero span{
@@ -157,19 +150,19 @@ color:#FFD700;
 
 .hero p{
 max-width:850px;
-margin:20px 0 30px;
 font-size:18px;
+margin-bottom:35px;
 color:#ddd;
 }
 
 .btn{
 display:inline-block;
-padding:15px 35px;
 background:#FFD700;
 color:#000;
+padding:15px 35px;
+border-radius:50px;
 text-decoration:none;
-font-weight:bold;
-border-radius:40px;
+font-weight:700;
 transition:.3s;
 }
 
@@ -184,13 +177,13 @@ padding:80px 10%;
 .title{
 text-align:center;
 font-size:40px;
+margin-bottom:50px;
 color:#FFD700;
-margin-bottom:45px;
 }
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:25px;
 }
 
@@ -229,12 +222,17 @@ color:#000;
 text-decoration:none;
 border-radius:8px;
 font-weight:bold;
+transition:.3s;
+}
+
+.btn-card:hover{
+background:#ffea70;
 }
 
 footer{
+background:#050b16;
 padding:30px;
 text-align:center;
-background:#050b16;
 margin-top:50px;
 }
 
@@ -242,7 +240,6 @@ margin-top:50px;
 
 .menu-toggle{
 display:block;
-margin-right:15px;
 }
 
 .logo-text h1{
@@ -292,129 +289,121 @@ font-size:30px;
 }
 
 </style>
-
-</<body>
-
-<header>
-
-<div class="header-container">
-
-<div class="menu-toggle" id="toggle" onclick="toggleMenu()">
-☰
-</div>
-
-<div class="logo-area">
-
-<img src="logo.jpeg" class="logo-img" alt="Logo">
-
-<div class="logo-text">
-<h1>FAMILY CS20</h1>
-<p>BELAJAR TRADING FOREX & GOLD</p>
-</div>
-
-</div>
-
-<nav id="menu">
-
-<a href="index.html">🏠 HOME</a>
-<a href="belajar.html" class="active">📚 BELAJAR</a>
-<a href="analisa.html">📈 ANALISA</a>
-<a href="kontak.html">📞 KONTAK</a>
-
-</nav>
-
-</div>
-
-<div id="overlay" onclick="toggleMenu()"></div>
-
-</header>
-
+</head>
 <section class="hero">
 
-<h1>Belajar <span>Trading</span> dengan Struktur yang Jelas</h1>
+    <h1>Belajar <span>Trading</span> dengan Struktur yang Jelas</h1>
 
-<p>
-Pelajari Market Structure, Smart Money Concept, Price Action,
-Support Resistance, hingga Risk Management dengan materi yang
-mudah dipahami untuk trader pemula maupun profesional.
-</p>
+    <p>
+        Pelajari Market Structure, Smart Money Concept, Price Action,
+        Support Resistance, hingga Risk Management dengan materi yang
+        mudah dipahami untuk trader pemula maupun profesional.
+    </p>
 
-<a href="#materi" class="btn">
-Mulai Belajar
-</a>
+    <a href="#materi" class="btn">Mulai Belajar</a>
 
 </section>
 
 <section class="section" id="materi">
 
-<h2 class="title">
-Materi Trading
-</h2>
+    <h2 class="title">Materi Trading</h2>
 
-<div class="grid">
-  <body>
+    <div class="grid">
 
-<header>
+        <div class="card">
+            <h3>📈 Market Structure</h3>
+            <p>Pelajari arah market menggunakan Higher High, Higher Low, Lower High, Lower Low, BOS dan CHoCH.</p>
+            <a href="market-structure.html" class="btn-card">Mulai Belajar →</a>
+        </div>
 
-<div class="header-container">
+        <div class="card">
+            <h3>🕯 Price Action</h3>
+            <p>Belajar membaca candle, momentum, rejection, engulfing dan entry tanpa indikator.</p>
+            <a href="price-action.html" class="btn-card">Mulai Belajar →</a>
+        </div>
 
-<div class="menu-toggle" id="toggle" onclick="toggleMenu()">
-☰
-</div>
+        <div class="card">
+            <h3>📊 Support & Resistance</h3>
+            <p>Menentukan area pantulan harga untuk entry, stop loss dan take profit.</p>
+            <a href="snr.html" class="btn-card">Mulai Belajar →</a>
+        </div>
 
-<div class="logo-area">
+        <div class="card">
+            <h3>📦 Supply & Demand</h3>
+            <p>Menemukan zona institusi untuk mendapatkan entry dengan probabilitas tinggi.</p>
+            <a href="supply-demand.html" class="btn-card">Mulai Belajar →</a>
+        </div>
 
-<img src="logo.jpeg" class="logo-img" alt="Logo">
+        <div class="card">
+            <h3>💰 Risk Management</h3>
+            <p>Pelajari Money Management, Risk Reward Ratio dan pengaturan lot yang benar.</p>
+            <a href="risk-management.html" class="btn-card">Mulai Belajar →</a>
+        </div>
 
-<div class="logo-text">
-<h1>FAMILY CS20</h1>
-<p>BELAJAR TRADING FOREX & GOLD</p>
-</div>
+        <div class="card">
+            <h3>📰 News Trading</h3>
+            <p>Belajar memahami dampak CPI, PPI, NFP, FOMC dan Interest Rate terhadap XAUUSD.</p>
+            <a href="news-trading.html" class="btn-card">Mulai Belajar →</a>
+        </div>
 
-</div>
-
-<nav id="menu">
-
-<a href="index.html">🏠 HOME</a>
-<a href="belajar.html" class="active">📚 BELAJAR</a>
-<a href="analisa.html">📈 ANALISA</a>
-<a href="kontak.html">📞 KONTAK</a>
-
-</nav>
-
-</div>
-
-<div id="overlay" onclick="toggleMenu()"></div>
-
-</header>
-
-<section class="hero">
-
-<h1>Belajar <span>Trading</span> dengan Struktur yang Jelas</h1>
-
-<p>
-Pelajari Market Structure, Smart Money Concept, Price Action,
-Support Resistance, hingga Risk Management dengan materi yang
-mudah dipahami untuk trader pemula maupun profesional.
-</p>
-
-<a href="#materi" class="btn">
-Mulai Belajar
-</a>
+    </div>
 
 </section>
+<div class="card">
+<h3>📈 Market Structure</h3>
 
-<section class="section" id="materi">
+<p>Pelajari pondasi utama membaca arah market sebelum entry.</p>
 
-<h2 class="title">
-Materi Trading
-</h2>
+<ul>
+<li>✅ Bullish, Bearish & Sideways</li>
+<li>✅ Higher High & Higher Low</li>
+<li>✅ Lower High & Lower Low</li>
+<li>✅ Major & Minor Structure</li>
+<li>✅ Break of Structure (BOS)</li>
+<li>✅ Change of Character (CHoCH)</li>
+</ul>
 
-<div class="grid">
-  <footer>
-© 2026 Family CS20 Trading Academy
-  </footer>
-  <script>
+<a href="market-structure.html" class="btn-card">Mulai Belajar →</a>
+</div>
+
+<div class="card">
+<h3>🕯 Price Action</h3>
+<p>Belajar membaca candlestick, rejection, engulfing, dan entry tanpa indikator.</p>
+<a href="price-action.html" class="btn-card">Mulai Belajar →</a>
+</div>
+
+<div class="card">
+<h3>📍 Support & Resistance</h3>
+<p>Menentukan area pantulan harga yang kuat untuk entry dan exit.</p>
+<a href="snr.html" class="btn-card">Mulai Belajar →</a>
+</div>
+
+<div class="card">
+<h3>📦 Supply & Demand</h3>
+<p>Memahami zona institusi sebagai area entry dengan probabilitas tinggi.</p>
+<a href="supply-demand.html" class="btn-card">Mulai Belajar →</a>
+</div>
+
+<div class="card">
+<h3>💰 Risk Management</h3>
+<p>Belajar Stop Loss, Take Profit, Risk Reward Ratio dan Money Management.</p>
+<a href="risk-management.html" class="btn-card">Mulai Belajar →</a>
+</div>
+
+<div class="card">
+<h3>📰 News Trading</h3>
+<p>Belajar pengaruh CPI, NFP, FOMC, PPI dan berita ekonomi terhadap XAUUSD.</p>
+<a href="news.html" class="btn-card">Mulai Belajar →</a>
+</div>
+<footer>
+
+<h3>© 2026 Family CS20 Trading Academy</h3>
+
+<p>Belajar Trading Forex & Gold Profesional</p>
+
+</footer>
+
+<script>
 
 const menu=document.getElementById("menu");
 const toggle=document.getElementById("toggle");
