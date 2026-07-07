@@ -22,81 +22,144 @@ color:white;
 }
 
 header{
-    background:#0d1626;
-    padding:20px 5%;
-    text-align:center;
-    position:sticky;
-    top:0;
-    z-index:1000;
+background:#0d1626;
+padding:15px 5%;
+position:sticky;
+top:0;
+z-index:999;
 }
 
-.logo{
-font-size:32px;
+.header-container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+max-width:1300px;
+margin:auto;
+}
+
+.logo-area{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo-img{
+width:60px;
+height:60px;
+border-radius:50%;
+border:2px solid #FFD700;
+}
+
+.logo-text h1{
+margin:0;
+font-size:28px;
 font-weight:700;
-color:#ffd700;
+color:#FFD700;
 letter-spacing:1px;
-text-shadow:0 0 10px rgba(255,215,0,.4);
 }
 
-/* ===== MENU FAMILY CS20 ===== */
+.logo-text p{
+margin-top:3px;
+font-size:13px;
+color:#ffffff;
+font-weight:400;
+}
+
+/* ===== MENU DESKTOP ===== */
 
 nav{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-wrap:wrap;
-    gap:15px;
-    margin-top:20px;
+display:flex;
+align-items:center;
+gap:35px;
+margin-left:auto;
 }
 
 nav a{
-    display:inline-flex;
-    justify-content:center;
-    align-items:center;
-    min-width:160px;
-    height:50px;
-
-    background:#111d31;
-    color:#ffffff;
-
-    text-decoration:none;
-    font-weight:600;
-    font-size:16px;
-
-    border:2px solid #FFD700;
-    border-radius:12px;
-
-    transition:0.3s;
+color:white;
+text-decoration:none;
+font-size:16px;
+font-weight:600;
+position:relative;
+transition:.3s;
 }
 
-nav a:hover{
-    background:#FFD700;
-    color:#08111f;
-    transform:translateY(-2px);
+nav a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-6px;
+width:0;
+height:2px;
+background:#FFD700;
+transition:.3s;
 }
 
+nav a:hover::after,
+nav a.active::after{
+width:100%;
+}
+
+nav a:hover,
 nav a.active{
-    background:#FFD700;
-    color:#08111f;
+color:#FFD700;
 }
 
-/* ===== RESPONSIVE HP ===== */
+.menu-toggle{
+display:none;
+font-size:34px;
+cursor:pointer;
+color:#fff;
+}
+/* ===== HP ===== */
 
-@media (max-width:768px){
+/* ===== MENU HP ===== */
 
-    nav{
-        display:grid;
-        grid-template-columns:repeat(2,1fr);
-        gap:12px;
-        width:100%;
-    }
+@media(max-width:768px){
 
-    nav a{
-        width:100%;
-        min-width:0;
-        font-size:15px;
-        height:48px;
-    }
+.header-container{
+position:relative;
+}
+
+.logo-text h1{
+font-size:22px;
+}
+
+.logo-text p{
+font-size:11px;
+}
+
+.menu-toggle{
+display:block;
+font-size:34px;
+cursor:pointer;
+margin-left:auto;
+}
+
+nav{
+display:none;
+position:absolute;
+top:78px;
+right:0;
+width:230px;
+flex-direction:column;
+background:#111d31;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 8px 20px rgba(0,0,0,.4);
+}
+
+nav.show{
+display:flex;
+}
+
+nav a{
+padding:15px 20px;
+border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+nav a:last-child{
+border-bottom:none;
+}
 
 }
 .hero{
@@ -267,28 +330,13 @@ font-size:40px;
 }
 
 .hero p{
-
 width:90%;
 font-size:18px;
-
 }
-.stats{
 
+.stats{
 grid-template-columns:repeat(2,1fr);
 gap:30px;
-
-}
-
-header{
-
-flex-direction:column;
-
-}
-
-nav{
-
-margin-top:15px;
-
 }
 
 }
@@ -301,42 +349,33 @@ margin-top:15px;
 
 <header>
 
-<div class="logo" style="text-align:center;display:block;">
+<div class="header-container">
 
-<img src="logo.jpeg"
-     alt="Logo Family CS20"
-     style="width:70px;height:70px;border-radius:50%;">
+    <div class="logo-area">
 
-<h1 style="
-font-family:'Poppins',sans-serif;
-font-size:30px;
-font-weight:700;
-color:#FFD700;
-margin:10px 0 5px 0;
-text-transform:uppercase;
-letter-spacing:1px;
-text-shadow:none;">
-FAMILY CS20
-</h1>
+        <img src="logo.jpeg" alt="Logo" class="logo-img">
 
-<p style="
-color:#F8FAFC;
-font-size:14px;
-margin-bottom:20px;">
-BELAJAR TRADING FOREX & GOLD
-</p>
+        <div class="logo-text">
+            <h1>FAMILY CS20</h1>
+            <p>BELAJAR TRADING FOREX & GOLD</p>
+        </div>
+
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </div>
+
+    <nav id="menu">
+        <a href="index.html" class="active">🏠 HOME</a>
+        <a href="belajar.html">📚 BELAJAR</a>
+        <a href="analisa.html">📈 ANALISA</a>
+        <a href="kontak.html">📞 KONTAK</a>
+    </nav>
 
 </div>
 
-<nav>
-<a href="index.html" class="active">🏠 HOME</a>
-<a href="belajar.html">📚 BELAJAR</a>
-<a href="analisa.html">📈 ANALISA</a>
-<a href="kontak.html">📞 KONTAK</a>
-</nav>
-
 </header>
-
 <section class="hero">
 
 <h1>Trading <span>XAUUSD</span> Lebih Cerdas</h1>
@@ -460,6 +499,12 @@ Belajar mengelola modal agar trading lebih konsisten.
 <p>Belajar Trading Forex & Gold Profesional</p>
 
 </footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("show");
+}
+</script>
 
 </body>
 </html>
