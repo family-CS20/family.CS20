@@ -34,15 +34,76 @@
     .back{
       display:inline-block;margin-top:20px;color:#ffd700;text-decoration:none;font-weight:700
     }
-    footer{padding:28px;text-align:center;background:#050b16;margin-top:40px;color:#cbd5e1}
-    @media (max-width:768px){
-      header{flex-direction:column;gap:12px}
-      nav{display:flex;flex-wrap:wrap;justify-content:center}
-      nav a{margin:8px 12px}
-      .hero h1{font-size:38px}
-      .hero p{font-size:16px}
-      .title{font-size:30px}
+   footer{
+    padding:28px;
+    text-align:center;
+    background:#050b16;
+    margin-top:40px;
+    color:#cbd5e1;
+}
+
+/* CSS CARD */
+
+.card ul{
+    margin:15px 0;
+    padding-left:20px;
+    line-height:1.8;
+}
+
+.card li{
+    margin-bottom:6px;
+}
+
+.btn-card{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    background:#ffd700;
+    color:#000;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-card:hover{
+    background:#ffea70;
+    transform:translateY(-2px);
+}
+
+/* Baru setelah itu */
+
+@media (max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:12px;
     }
+
+    nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    nav a{
+        margin:8px 12px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .title{
+        font-size:30px;
+    }
+
+}
+    
   </style>
 </head>
 <body>
@@ -71,9 +132,30 @@
 
     <div class="grid">
       <div class="card">
-        <h3>Market Structure</h3>
-        <p>Memahami trend naik, trend turun, higher high, higher low, lower high, dan lower low.</p>
-      </div>
+
+<h3>📈 Market Structure</h3>
+
+<p>
+Pelajari pondasi utama untuk membaca arah market sebelum melakukan entry.
+</p>
+
+<ul>
+<li>✅ Bullish, Bearish & Sideways</li>
+<li>✅ Higher High & Higher Low</li>
+<li>✅ Lower High & Lower Low</li>
+<li>✅ Major Market Structure</li>
+<li>✅ Minor Market Structure</li>
+<li>✅ Break of Structure (BOS)</li>
+<li>✅ Change of Character (CHoCH)</li>
+</ul>
+
+<p><strong>🟢 Level :</strong> Beginner</p>
+
+<p><strong>⏱ Durasi :</strong> ±30 Menit</p>
+
+<a href="#" class="btn-card">Mulai Belajar →</a>
+
+</div>
 
       <div class="card">
         <h3>Price Action</h3>
@@ -86,9 +168,32 @@
       </div>
 
       <div class="card">
-        <h3>Smart Money Concept</h3>
-        <p>Belajar melihat liquidity, order block, dan fair value gap dengan lebih sederhana.</p>
-      </div>
+  <h3>📦 Supply & Demand</h3>
+  <p>
+    Pelajari cara menemukan zona Supply dan Demand untuk entry yang lebih akurat.
+  </p>
+</div>
+
+<div class="card">
+  <h3>💵 Risk Management</h3>
+  <p>
+    Belajar mengatur risiko, Stop Loss, Take Profit, dan Risk Reward Ratio.
+  </p>
+</div>
+
+<div class="card">
+  <h3>🧠 Trading Psychology</h3>
+  <p>
+    Kendalikan emosi, hindari overtrading, dan bangun disiplin dalam trading.
+  </p>
+</div>
+
+<div class="card">
+  <h3>📅 News Trading</h3>
+  <p>
+    Memahami dampak berita seperti NFP, CPI, FOMC, dan Interest Rate terhadap XAUUSD.
+  </p>
+</div>
     </div>
 
     <a class="back" href="index.html">← Kembali ke Home</a>
