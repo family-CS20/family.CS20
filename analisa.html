@@ -17,6 +17,14 @@ body{
     background:#0b1220;
     color:#fff;
 }
+    header{
+background:#111827;
+padding:15px 5%;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 5px 15px rgba(0,0,0,.4);
+}
 /* ===== HEADER ===== */
 
 .header-container{
@@ -89,14 +97,17 @@ nav a:hover::after,
 nav a.active::after{
 width:100%;
 }
-
 .menu-toggle{
 display:none;
 font-size:34px;
 cursor:pointer;
 color:#FFD700;
-z-index:1002;
+width:40px;
+text-align:center;
+font-weight:bold;
+transition:.3s;
 user-select:none;
+z-index:1002;
 }
 
 #overlay{
