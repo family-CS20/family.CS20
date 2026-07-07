@@ -1,11 +1,184 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Kontak | Family CS20</title>
 
-<link rel="stylesheet" href="assets/css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#08111f;
+color:#fff;
+}
+
+header{
+background:#0d1626;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:30px;
+font-weight:800;
+color:#FFD700;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:25px;
+font-weight:600;
+}
+
+nav a:hover,
+nav a.active{
+color:#FFD700;
+}
+
+.hero{
+
+padding:90px 20px;
+text-align:center;
+
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.7)),
+url("https://images.unsplash.com/photo-1642790106117-e829e14a795f?auto=format&fit=crop&w=1600&q=80");
+
+background-size:cover;
+background-position:center;
+
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero span{
+color:#FFD700;
+}
+
+.hero p{
+max-width:800px;
+margin:auto;
+font-size:19px;
+color:#ddd;
+}
+
+.container{
+
+max-width:1100px;
+margin:60px auto;
+padding:0 20px;
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+
+}
+
+.card{
+
+background:#111d31;
+padding:35px;
+border-radius:18px;
+box-shadow:0 8px 25px rgba(0,0,0,.3);
+
+}
+
+.card h2{
+color:#FFD700;
+margin-bottom:20px;
+}
+
+.card p{
+margin-bottom:15px;
+color:#ddd;
+}
+
+.btn{
+
+display:block;
+text-align:center;
+margin-top:15px;
+padding:14px;
+background:#FFD700;
+color:#000;
+text-decoration:none;
+font-weight:bold;
+border-radius:10px;
+transition:.3s;
+
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.info{
+
+margin-top:20px;
+
+}
+
+.info p{
+margin-bottom:12px;
+}
+
+footer{
+
+background:#050b16;
+text-align:center;
+padding:30px;
+margin-top:60px;
+
+}
+
+@media(max-width:768px){
+
+header{
+
+flex-direction:column;
+gap:15px;
+
+}
+
+nav{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+}
+
+</style>
 
 </head>
 
@@ -14,14 +187,19 @@
 <header>
 
 <div class="logo">
-Family CS20
+📈 Family CS20
 </div>
 
 <nav>
+
 <a href="index.html">Home</a>
+
 <a href="belajar.html">Belajar</a>
+
 <a href="analisa.html">Analisa</a>
-<a href="kontak.html">Kontak</a>
+
+<a href="kontak.html" class="active">Kontak</a>
+
 </nav>
 
 </header>
@@ -31,18 +209,69 @@ Family CS20
 <h1>Hubungi <span>Kami</span></h1>
 
 <p>
-Jika ingin belajar trading atau bekerja sama, silakan hubungi kami.
-</p>
 
-<a class="btn" href="https://wa.me/6285879379423" target="_blank">
-    WhatsApp Saya
-</a>
+Jika memiliki pertanyaan mengenai materi trading,
+analisa XAUUSD, atau ingin bergabung belajar bersama
+Family CS20, silakan hubungi kami melalui salah satu kontak berikut.
+
+</p>
 
 </section>
 
+<div class="container">
+
+<div class="card">
+<div class="card">
+
+<h2>📬 Kontak & Sosial Media</h2>
+
+<div class="info">
+
+<p>📧 Email : <strong>dalbotrada@gmail.com</strong></p>
+
+<p>📢 Telegram : <strong>@codecnt</strong></p>
+
+<p>📸 Instagram : <strong>@hamdannn.48</strong></p>
+
+<p>💬 WhatsApp : <strong>+62 858-7937-9423</strong></p>
+
+<br>
+
+<p>
+Silakan hubungi kami apabila memiliki pertanyaan mengenai
+Trading Forex, Gold (XAUUSD), atau materi yang tersedia di Family CS20.
+</p>
+
+<a href="https://t.me/codecnt" target="_blank" class="btn">
+📢 Telegram
+</a>
+
+<a href="https://instagram.com/hamdannn.48" target="_blank" class="btn" style="margin-top:12px;">
+📸 Instagram
+</a>
+
+</div>
+
+</div>
+
+</div>
+
 <footer>
-© 2026 Family CS20
+
+<h3>Family CS20 Trading Academy</h3>
+
+<p>
+
+Belajar Trading Forex & Gold dari Dasar hingga Mahir
+
+</p>
+
+<p style="margin-top:10px;">
+© 2026 Family CS20. All Rights Reserved.
+</p>
+
 </footer>
 
 </body>
+
 </html>
