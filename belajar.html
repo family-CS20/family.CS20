@@ -24,6 +24,8 @@ color:#fff;
 line-height:1.6;
 }
 
+/* HEADER */
+
 header{
 background:#0d1626;
 padding:15px 5%;
@@ -75,8 +77,8 @@ nav a{
 color:#fff;
 text-decoration:none;
 font-weight:600;
-transition:.3s;
 position:relative;
+transition:.3s;
 }
 
 nav a:hover,
@@ -106,6 +108,7 @@ font-size:34px;
 cursor:pointer;
 color:#FFD700;
 z-index:1002;
+user-select:none;
 }
 
 #overlay{
@@ -122,7 +125,8 @@ z-index:998;
 #overlay.show{
 display:block;
 }
-  /* ===== HERO ===== */
+
+/* HERO */
 
 .hero{
 min-height:70vh;
@@ -162,7 +166,7 @@ color:#000;
 padding:15px 35px;
 border-radius:50px;
 text-decoration:none;
-font-weight:700;
+font-weight:bold;
 transition:.3s;
 }
 
@@ -176,7 +180,7 @@ padding:80px 10%;
 
 .title{
 text-align:center;
-font-size:40px;
+font-size:42px;
 margin-bottom:50px;
 color:#FFD700;
 }
@@ -192,6 +196,7 @@ background:#111d31;
 padding:30px;
 border-radius:18px;
 transition:.3s;
+box-shadow:0 10px 30px rgba(0,0,0,.25);
 }
 
 .card:hover{
@@ -207,12 +212,6 @@ margin-bottom:15px;
 color:#ddd;
 }
 
-.card ul{
-margin-top:15px;
-margin-left:20px;
-line-height:1.8;
-}
-
 .btn-card{
 display:inline-block;
 margin-top:20px;
@@ -220,13 +219,8 @@ padding:10px 22px;
 background:#FFD700;
 color:#000;
 text-decoration:none;
-border-radius:8px;
 font-weight:bold;
-transition:.3s;
-}
-
-.btn-card:hover{
-background:#ffea70;
+border-radius:8px;
 }
 
 footer{
@@ -261,7 +255,6 @@ height:100vh;
 background:#0d1626;
 padding-top:90px;
 transition:.35s;
-box-shadow:5px 0 20px rgba(0,0,0,.45);
 z-index:999;
 }
 
@@ -283,123 +276,203 @@ font-size:16px;
 }
 
 .title{
-font-size:30px;
+font-size:32px;
 }
 
 }
 
 </style>
+
 </head>
+
+<body>
+
+<header>
+
+<div class="header-container">
+
+<div class="menu-toggle" id="toggle" onclick="toggleMenu()">
+☰
+</div>
+
+<div class="logo-area">
+
+<img src="logo.jpeg" class="logo-img">
+
+<div class="logo-text">
+<h1>FAMILY CS20</h1>
+<p>BELAJAR TRADING FOREX & GOLD</p>
+</div>
+
+</div>
+
+<nav id="menu">
+
+<a href="index.html">🏠 HOME</a>
+<a href="belajar.html" class="active">📚 BELAJAR</a>
+<a href="analisa.html">📈 ANALISA</a>
+<a href="kontak.html">📞 KONTAK</a>
+
+</nav>
+
+</div>
+
+<div id="overlay" onclick="toggleMenu()"></div>
+
+</header>
 <section class="hero">
 
-    <h1>Belajar <span>Trading</span> dengan Struktur yang Jelas</h1>
+<h1>
+Belajar <span>Trading</span> Profesional
+</h1>
 
-    <p>
-        Pelajari Market Structure, Smart Money Concept, Price Action,
-        Support Resistance, hingga Risk Management dengan materi yang
-        mudah dipahami untuk trader pemula maupun profesional.
-    </p>
+<p>
+Pelajari Market Structure, Smart Money Concept, Price Action,
+Support Resistance, Supply & Demand, Risk Management,
+hingga News Trading khusus XAUUSD dengan materi yang
+tersusun dari dasar sampai mahir.
+</p>
 
-    <a href="#materi" class="btn">Mulai Belajar</a>
+<a href="#materi" class="btn">
+🚀 Mulai Belajar
+</a>
 
 </section>
 
 <section class="section" id="materi">
 
-    <h2 class="title">Materi Trading</h2>
+<h2 class="title">
+📚 Materi Trading
+</h2>
 
-    <div class="grid">
+<div class="grid">
 
-        <div class="card">
-            <h3>📈 Market Structure</h3>
-            <p>Pelajari arah market menggunakan Higher High, Higher Low, Lower High, Lower Low, BOS dan CHoCH.</p>
-            <a href="market-structure.html" class="btn-card">Mulai Belajar →</a>
-        </div>
-
-        <div class="card">
-            <h3>🕯 Price Action</h3>
-            <p>Belajar membaca candle, momentum, rejection, engulfing dan entry tanpa indikator.</p>
-            <a href="price-action.html" class="btn-card">Mulai Belajar →</a>
-        </div>
-
-        <div class="card">
-            <h3>📊 Support & Resistance</h3>
-            <p>Menentukan area pantulan harga untuk entry, stop loss dan take profit.</p>
-            <a href="snr.html" class="btn-card">Mulai Belajar →</a>
-        </div>
-
-        <div class="card">
-            <h3>📦 Supply & Demand</h3>
-            <p>Menemukan zona institusi untuk mendapatkan entry dengan probabilitas tinggi.</p>
-            <a href="supply-demand.html" class="btn-card">Mulai Belajar →</a>
-        </div>
-
-        <div class="card">
-            <h3>💰 Risk Management</h3>
-            <p>Pelajari Money Management, Risk Reward Ratio dan pengaturan lot yang benar.</p>
-            <a href="risk-management.html" class="btn-card">Mulai Belajar →</a>
-        </div>
-
-        <div class="card">
-            <h3>📰 News Trading</h3>
-            <p>Belajar memahami dampak CPI, PPI, NFP, FOMC dan Interest Rate terhadap XAUUSD.</p>
-            <a href="news-trading.html" class="btn-card">Mulai Belajar →</a>
-        </div>
-
-    </div>
-
-</section>
 <div class="card">
+
 <h3>📈 Market Structure</h3>
 
-<p>Pelajari pondasi utama membaca arah market sebelum entry.</p>
+<p>
+Pelajari cara membaca arah market menggunakan Higher High,
+Higher Low, Lower High, Lower Low,
+Major Structure, Minor Structure,
+Break of Structure (BOS) dan CHoCH.
+</p>
 
-<ul>
-<li>✅ Bullish, Bearish & Sideways</li>
-<li>✅ Higher High & Higher Low</li>
-<li>✅ Lower High & Lower Low</li>
-<li>✅ Major & Minor Structure</li>
-<li>✅ Break of Structure (BOS)</li>
-<li>✅ Change of Character (CHoCH)</li>
-</ul>
+<a href="market-structure.html" class="btn-card">
+Mulai Belajar →
+</a>
 
-<a href="market-structure.html" class="btn-card">Mulai Belajar →</a>
 </div>
 
 <div class="card">
+
 <h3>🕯 Price Action</h3>
-<p>Belajar membaca candlestick, rejection, engulfing, dan entry tanpa indikator.</p>
-<a href="price-action.html" class="btn-card">Mulai Belajar →</a>
+
+<p>
+Belajar membaca Candlestick,
+Rejection, Engulfing,
+Pin Bar, Inside Bar,
+hingga Entry tanpa indikator.
+</p>
+
+<a href="price-action.html" class="btn-card">
+Mulai Belajar →
+</a>
+
 </div>
 
 <div class="card">
+
 <h3>📍 Support & Resistance</h3>
-<p>Menentukan area pantulan harga yang kuat untuk entry dan exit.</p>
-<a href="snr.html" class="btn-card">Mulai Belajar →</a>
-</div>
 
+<p>
+Pelajari cara menentukan area Support Resistance
+yang valid untuk Entry,
+Stop Loss dan Take Profit.
+</p>
+
+<a href="snr.html" class="btn-card">
+Mulai Belajar →
+</a>
+
+</div>
 <div class="card">
+
 <h3>📦 Supply & Demand</h3>
-<p>Memahami zona institusi sebagai area entry dengan probabilitas tinggi.</p>
-<a href="supply-demand.html" class="btn-card">Mulai Belajar →</a>
+
+<p>
+Pelajari cara menemukan zona Supply & Demand
+untuk mendapatkan entry dengan probabilitas tinggi
+mengikuti pergerakan institusi.
+</p>
+
+<a href="supply-demand.html" class="btn-card">
+Mulai Belajar →
+</a>
+
 </div>
 
 <div class="card">
+
 <h3>💰 Risk Management</h3>
-<p>Belajar Stop Loss, Take Profit, Risk Reward Ratio dan Money Management.</p>
-<a href="risk-management.html" class="btn-card">Mulai Belajar →</a>
+
+<p>
+Belajar menentukan ukuran lot,
+Risk Reward Ratio,
+Stop Loss,
+Take Profit,
+serta Money Management agar akun tetap aman.
+</p>
+
+<a href="risk-management.html" class="btn-card">
+Mulai Belajar →
+</a>
+
 </div>
 
 <div class="card">
+
 <h3>📰 News Trading</h3>
-<p>Belajar pengaruh CPI, NFP, FOMC, PPI dan berita ekonomi terhadap XAUUSD.</p>
-<a href="news.html" class="btn-card">Mulai Belajar →</a>
+
+<p>
+Pelajari dampak berita ekonomi seperti
+CPI, PPI, NFP, FOMC,
+Interest Rate,
+dan cara trading saat news berlangsung.
+</p>
+
+<a href="news-trading.html" class="btn-card">
+Mulai Belajar →
+</a>
+
 </div>
+
+<div class="card">
+
+<h3>🧠 Trading Psychology</h3>
+
+<p>
+Belajar mengendalikan emosi,
+menghindari overtrading,
+serta membangun disiplin agar konsisten profit.
+</p>
+
+<a href="psychology.html" class="btn-card">
+Mulai Belajar →
+</a>
+
+</div>
+
+</div>
+
+</section>
 <footer>
 
 <h3>© 2026 Family CS20 Trading Academy</h3>
 
-<p>Belajar Trading Forex & Gold Profesional</p>
+<p>
+Belajar Trading Forex & Gold Profesional
+</p>
 
 </footer>
 
