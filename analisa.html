@@ -17,7 +17,71 @@ body{
     background:#0b1220;
     color:#fff;
 }
+/* ===== HEADER ===== */
 
+.header-container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+max-width:1300px;
+margin:auto;
+position:relative;
+}
+
+.logo-area{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo-img{
+width:60px;
+height:60px;
+border-radius:50%;
+border:2px solid gold;
+}
+
+.logo-text{
+display:flex;
+flex-direction:column;
+}
+
+.logo-text h1{
+margin:0;
+font-size:28px;
+color:#FFD700;
+}
+
+.logo-text p{
+margin-top:3px;
+font-size:13px;
+color:#fff;
+}
+
+nav{
+display:flex;
+gap:35px;
+margin-left:auto;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover,
+nav a.active{
+color:#FFD700;
+}
+
+.menu-toggle{
+display:none;
+font-size:34px;
+cursor:pointer;
+color:#FFD700;
+    }
 header{
     background:#111827;
     padding:25px;
@@ -113,19 +177,34 @@ header h1{
 <body>
 
 <header>
+
 <div class="header-container">
 
-<div class="menu-toggle" onclick="toggleMenu()" id="toggle">
-☰
+    <div class="menu-toggle" onclick="toggleMenu()" id="toggle">
+        ☰
+    </div>
+
+    <div class="logo-area">
+
+        <img src="logo.jpeg" alt="Logo" class="logo-img">
+
+        <div class="logo-text">
+            <h1>FAMILY CS20</h1>
+            <p>BELAJAR TRADING FOREX & GOLD</p>
+        </div>
+
+    </div>
+
+    <nav id="menu">
+        <a href="index.html">🏠 HOME</a>
+        <a href="belajar.html">📚 BELAJAR</a>
+        <a href="analisa.html" class="active">📈 ANALISA</a>
+        <a href="kontak.html">📞 KONTAK</a>
+    </nav>
+
 </div>
 
-<div class="logo-area">
-
-<img src="logo.jpeg" alt="Logo" class="logo-img">
-
-<div class="logo-text">
-<h1>FAMILY CS20</h1>
-<p>BELAJAR TRADING FOREX &
+</header>
 
 <div class="container">
 
