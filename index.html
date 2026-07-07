@@ -35,12 +35,18 @@ justify-content:space-between;
 align-items:center;
 max-width:1300px;
 margin:auto;
+position:relative;
 }
 
 .logo-area{
 display:flex;
 align-items:center;
 gap:15px;
+}
+
+.logo-text{
+display:flex;
+flex-direction:column;
 }
 
 .logo-img{
@@ -74,6 +80,11 @@ gap:35px;
 margin-left:auto;
 }
 
+@media(max-width:768px){
+nav{
+margin-left:0;
+}
+}
 nav a{
 color:white;
 text-decoration:none;
@@ -108,7 +119,10 @@ color:#FFD700;
 display:none;
 font-size:34px;
 cursor:pointer;
-color:#fff;
+color:#FFD700;
+transition:.35s;
+user-select:none;
+z-index:1001;
 }
 /* ===== HP ===== */
 
@@ -130,31 +144,37 @@ font-size:11px;
 
 .menu-toggle{
 display:block;
+margin-right:18px;
 font-size:34px;
-cursor:pointer;
-margin-left:auto;
+}
+
+.logo-area{
+margin-left:0;
 }
 
 nav{
-display:none;
-position:absolute;
-top:78px;
-right:0;
-width:230px;
+display:flex;
 flex-direction:column;
-background:#111d31;
-border-radius:12px;
-overflow:hidden;
-box-shadow:0 8px 20px rgba(0,0,0,.4);
+position:fixed;
+top:0;
+left:-270px;
+width:250px;
+height:100vh;
+background:#0d1626;
+padding-top:90px;
+transition:.35s;
+box-shadow:5px 0 20px rgba(0,0,0,.45);
+z-index:999;
 }
 
 nav.show{
-display:flex;
+left:0;
 }
 
 nav a{
-padding:15px 20px;
+padding:18px 25px;
 border-bottom:1px solid rgba(255,255,255,.08);
+font-size:16px;
 }
 
 nav a:last-child{
@@ -348,30 +368,31 @@ gap:30px;
 <body>
 
 <header>
-
 <div class="header-container">
 
-    <div class="logo-area">
+<div class="menu-toggle" onclick="toggleMenu()" id="toggle">
+☰
+</div>
 
-        <img src="logo.jpeg" alt="Logo" class="logo-img">
+<div class="logo-area">
 
-        <div class="logo-text">
-            <h1>FAMILY CS20</h1>
-            <p>BELAJAR TRADING FOREX & GOLD</p>
-        </div>
+<img src="logo.jpeg" alt="Logo" class="logo-img">
 
-    </div>
+<div class="logo-text">
+<h1>FAMILY CS20</h1>
+<p>BELAJAR TRADING FOREX & GOLD</p>
+</div>
 
-    <div class="menu-toggle" onclick="toggleMenu()">
-        ☰
-    </div>
+</div>
 
-    <nav id="menu">
-        <a href="index.html" class="active">🏠 HOME</a>
-        <a href="belajar.html">📚 BELAJAR</a>
-        <a href="analisa.html">📈 ANALISA</a>
-        <a href="kontak.html">📞 KONTAK</a>
-    </nav>
+<nav id="menu">
+
+<a href="index.html" class="active">🏠 HOME</a>
+<a href="belajar.html">📚 BELAJAR</a>
+<a href="analisa.html">📈 ANALISA</a>
+<a href="kontak.html">📞 KONTAK</a>
+
+</nav>
 
 </div>
 
@@ -501,8 +522,19 @@ Belajar mengelola modal agar trading lebih konsisten.
 </footer>
 
 <script>
-function toggleMenu() {
-    document.getElementById("menu").classList.toggle("show");
+const menu=document.getElementById("menu");
+const toggle=document.getElementById("toggle");
+
+function toggleMenu(){
+
+menu.classList.toggle("show");
+
+if(menu.classList.contains("show")){
+toggle.innerHTML="✕";
+}else{
+toggle.innerHTML="☰";
+}
+
 }
 </script>
 
