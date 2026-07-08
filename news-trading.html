@@ -1,0 +1,2030 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>News Trading | Family CS20</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#08111f;
+color:#fff;
+line-height:1.8;
+}
+
+/* HEADER */
+
+header{
+background:#0d1626;
+padding:15px 5%;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 5px 15px rgba(0,0,0,.35);
+}
+
+.header-container{
+max-width:1300px;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.logo-area{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo-img{
+width:60px;
+height:60px;
+border-radius:50%;
+border:2px solid #FFD700;
+}
+
+.logo-text h1{
+font-size:28px;
+color:#FFD700;
+}
+
+.logo-text p{
+font-size:13px;
+color:#ddd;
+}
+
+nav{
+display:flex;
+gap:35px;
+margin-left:auto;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover,
+nav a.active{
+color:#FFD700;
+}
+
+.menu-toggle{
+display:none;
+font-size:34px;
+cursor:pointer;
+color:#FFD700;
+user-select:none;
+z-index:1002;
+}
+
+#overlay{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.5);
+z-index:998;
+}
+
+#overlay.show{
+display:block;
+}
+
+/* HERO */
+
+.hero{
+min-height:70vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:80px 10%;
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.82)),
+url("https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1800&q=80");
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:58px;
+color:#FFD700;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:850px;
+font-size:20px;
+color:#ddd;
+}
+
+.btn{
+display:inline-block;
+margin-top:35px;
+padding:15px 35px;
+background:#FFD700;
+color:#000;
+font-weight:bold;
+text-decoration:none;
+border-radius:50px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.content{
+max-width:1100px;
+margin:auto;
+padding:70px 20px;
+}
+
+.card{
+background:#111d31;
+padding:35px;
+border-radius:18px;
+margin-bottom:35px;
+box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+footer{
+background:#050b16;
+padding:35px;
+text-align:center;
+margin-top:60px;
+color:#ccc;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.menu-toggle{
+display:block;
+}
+
+nav{
+display:flex;
+flex-direction:column;
+position:fixed;
+top:0;
+left:-270px;
+width:250px;
+height:100vh;
+background:#0d1626;
+padding-top:90px;
+transition:.35s;
+z-index:999;
+}
+
+nav.show{
+left:0;
+}
+
+nav a{
+padding:18px 25px;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="header-container">
+
+<div class="menu-toggle" id="toggle" onclick="toggleMenu()">☰</div>
+
+<div class="logo-area">
+
+<img src="logo.jpeg" class="logo-img">
+
+<div class="logo-text">
+
+<h1>FAMILY CS20</h1>
+
+<p>BELAJAR TRADING FOREX & GOLD</p>
+
+</div>
+
+</div>
+
+<nav id="menu">
+
+<a href="index.html">🏠 HOME</a>
+
+<a href="belajar.html" class="active">📚 BELAJAR</a>
+
+<a href="analisa.html">📈 ANALISA</a>
+
+<a href="kontak.html">📞 KONTAK</a>
+
+</nav>
+
+</div>
+
+<div id="overlay" onclick="toggleMenu()"></div>
+
+</header>
+
+<section class="hero">
+
+<h1>📰 News Trading</h1>
+
+<p>
+Pelajari cara membaca berita ekonomi seperti NFP, CPI, FOMC, Interest Rate, dan memahami dampaknya terhadap pergerakan harga XAUUSD secara profesional.
+</p>
+
+<a href="#bab1" class="btn">
+Mulai Belajar →
+</a>
+
+</section>
+
+<div class="content">
+
+<!-- BAB 1 AKAN KITA TAMBAHKAN DI SINI -->
+  <!-- ========================= -->
+<!-- BAB 1 -->
+<!-- ========================= -->
+
+<div class="card" id="bab1">
+
+<div style="
+display:inline-block;
+background:#FFD700;
+color:#000;
+padding:8px 18px;
+border-radius:30px;
+font-weight:bold;
+margin-bottom:20px;">
+📖 BAB 1 dari 9
+</div>
+
+<h2 style="font-size:40px;color:#FFD700;margin-bottom:20px;">
+Apa itu News Trading?
+</h2>
+
+<p style="font-size:20px;color:#ddd;line-height:2;">
+
+News Trading adalah teknik trading yang memanfaatkan pergerakan harga
+setelah berita ekonomi penting dirilis.
+
+Ketika data ekonomi Amerika diumumkan, jutaan transaksi dari bank,
+institusi, hedge fund, dan trader di seluruh dunia masuk ke market
+secara bersamaan sehingga harga dapat bergerak sangat cepat.
+
+Karena itulah trader profesional selalu mengetahui jadwal berita
+sebelum membuka posisi.
+
+</p>
+
+<div style="margin:35px 0;text-align:center;">
+
+<img src="assets/images/news-intro.jpg"
+style="width:100%;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.4);">
+
+<p style="margin-top:15px;color:#aaa;">
+Ilustrasi reaksi market ketika berita ekonomi dirilis.
+</p>
+
+</div>
+
+<hr style="margin:35px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;font-size:28px;">
+🎯 Tujuan Belajar
+</h3>
+
+<p>
+
+Setelah menyelesaikan bab ini Anda akan memahami:
+
+</p>
+
+<ul style="margin-left:30px;line-height:2;">
+
+<li>✅ Apa itu News Trading.</li>
+
+<li>✅ Mengapa berita mampu menggerakkan market.</li>
+
+<li>✅ Mengapa Gold sangat sensitif terhadap USD.</li>
+
+<li>✅ Mengapa trader profesional selalu melihat kalender ekonomi.</li>
+
+</ul>
+
+<hr style="margin:35px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;font-size:28px;">
+🌍 Siapa yang Menggerakkan Market?
+</h3>
+
+<p>
+
+Harga XAUUSD bukan digerakkan oleh trader retail.
+
+Pergerakan terbesar berasal dari:
+
+</p>
+
+<ul style="margin-left:30px;line-height:2;">
+
+<li>🏦 Bank Sentral</li>
+
+<li>💰 Hedge Fund</li>
+
+<li>🏛 Bank Investasi</li>
+
+<li>💵 Institusi Keuangan</li>
+
+<li>📈 Trader Besar</li>
+
+</ul>
+
+<p>
+
+Saat berita penting keluar, mereka melakukan transaksi dalam jumlah
+sangat besar sehingga harga bergerak dengan cepat.
+
+</p>
+
+<hr style="margin:35px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;font-size:28px;">
+📌 Contoh Peristiwa
+</h3>
+
+<div style="
+background:#162238;
+padding:25px;
+border-left:6px solid #FFD700;
+border-radius:12px;
+margin-top:20px;">
+
+<h4 style="color:#FFD700;">
+Contoh:
+</h4>
+
+<p style="margin-top:15px;">
+
+Hari Jumat pukul 19.30 WIB data NFP dirilis.
+
+Dalam waktu kurang dari 2 menit,
+Gold dapat bergerak lebih dari 100 pip.
+
+Trader yang tidak mengetahui jadwal berita
+sering terkena Stop Loss karena volatilitas yang sangat tinggi.
+
+</p>
+
+</div>
+
+<hr style="margin:35px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;font-size:28px;">
+💡 Tips Profesional
+</h3>
+
+<div style="
+background:#10243d;
+padding:25px;
+border-radius:12px;">
+
+<p>
+
+✔ Selalu cek kalender ekonomi sebelum trading.
+
+<br><br>
+
+✔ Hindari entry beberapa menit sebelum berita High Impact.
+
+<br><br>
+
+✔ Tunggu market memberikan konfirmasi setelah news dirilis.
+
+</p>
+
+</div>
+
+<hr style="margin:35px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;font-size:28px;">
+📝 Ringkasan Bab 1
+</h3>
+
+<p>
+
+News Trading bukan hanya trading saat berita keluar.
+
+Trader profesional memahami bagaimana berita memengaruhi
+USD, sentimen investor, dan akhirnya menggerakkan harga Gold.
+
+Itulah alasan mengapa memahami berita ekonomi menjadi salah satu
+pondasi penting dalam trading.
+
+</p>
+
+<div style="display:flex;justify-content:flex-end;margin-top:40px;">
+
+<a href="#bab2" class="btn">
+Lanjut BAB 2 →
+</a>
+
+</div>
+
+</div>
+<!-- ========================= -->
+<!-- BAB 2 -->
+<!-- ========================= -->
+
+<div class="card" id="bab2">
+
+<div style="
+display:inline-block;
+background:#FFD700;
+color:#000;
+padding:8px 18px;
+border-radius:30px;
+font-weight:bold;
+margin-bottom:20px;">
+📖 BAB 2 dari 9
+</div>
+
+<h2 style="font-size:40px;color:#FFD700;margin-bottom:20px;">
+Mengapa News Bisa Menggerakkan Market?
+</h2>
+
+<p style="font-size:20px;line-height:2;color:#ddd;">
+
+Banyak trader pemula mengira harga Gold bergerak secara acak.
+Padahal sebagian besar pergerakan besar terjadi karena adanya
+berita ekonomi yang memengaruhi nilai mata uang USD.
+
+Ketika data ekonomi diumumkan, investor akan langsung menilai
+apakah kondisi ekonomi Amerika membaik atau memburuk.
+
+</p>
+
+<div style="text-align:center;margin:35px 0;">
+
+<img src="assets/images/news-flow.png"
+style="width:100%;border-radius:18px;">
+
+<p style="margin-top:15px;color:#999;">
+Alur pengaruh berita ekonomi terhadap pergerakan Gold.
+</p>
+
+</div>
+
+<div style="
+background:#162238;
+padding:30px;
+border-radius:15px;
+margin-top:30px;">
+
+<h3 style="color:#FFD700;text-align:center;">
+Alur Sederhana
+</h3>
+
+<div style="font-size:22px;line-height:2.4;text-align:center;">
+
+📰 Berita Ekonomi
+
+<br>
+
+⬇
+
+<br>
+
+💵 Nilai USD Berubah
+
+<br>
+
+⬇
+
+<br>
+
+🏦 Investor Bereaksi
+
+<br>
+
+⬇
+
+<br>
+
+📈 Harga Gold Naik atau Turun
+
+</div>
+
+</div>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+Contoh 1
+</h3>
+
+<div style="
+background:#10243d;
+padding:25px;
+border-left:6px solid #FFD700;
+border-radius:12px;">
+
+<p>
+
+Data NFP keluar jauh lebih bagus dari perkiraan.
+
+Investor percaya ekonomi Amerika sedang kuat.
+
+Akibatnya:
+
+</p>
+
+<ul style="margin-left:30px;line-height:2;">
+
+<li>📈 USD Menguat</li>
+
+<li>📉 Gold Cenderung Turun</li>
+
+</ul>
+
+</div>
+
+<hr style="margin:35
+  <h3 style="color:#FFD700;margin-top:40px;">
+Contoh 2
+</h3>
+
+<div style="
+background:#10243d;
+padding:25px;
+border-left:6px solid #FFD700;
+border-radius:12px;">
+
+<p>
+
+Data CPI keluar lebih tinggi dari perkiraan.
+
+Inflasi meningkat sehingga muncul kemungkinan
+The Fed akan menaikkan suku bunga.
+
+Akibatnya:
+
+</p>
+
+<ul style="margin-left:30px;line-height:2;">
+
+<li>📈 USD Menguat</li>
+
+<li>📉 Gold Cenderung Turun</li>
+
+</ul>
+
+</div>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+Contoh 3
+</h3>
+
+<div style="
+background:#10243d;
+padding:25px;
+border-left:6px solid #FFD700;
+border-radius:12px;">
+
+<p>
+
+Data ekonomi keluar jauh lebih buruk dari perkiraan.
+
+Investor mulai menjual USD dan mencari aset yang lebih aman.
+
+Akibatnya:
+
+</p>
+
+<ul style="margin-left:30px;line-height:2;">
+
+<li>📉 USD Melemah</li>
+
+<li>📈 Gold Cenderung Naik</li>
+
+</ul>
+
+</div>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+⚠ Kesalahan Trader Pemula
+</h3>
+
+<ul style="margin-left:30px;line-height:2;">
+
+<li>❌ Entry tepat sebelum berita dirilis.</li>
+
+<li>❌ Tidak melihat kalender ekonomi.</li>
+
+<li>❌ Menganggap semua berita berdampak besar.</li>
+
+<li>❌ Panik ketika candle bergerak sangat cepat.</li>
+
+<li>❌ Menggunakan lot terlalu besar saat news.</li>
+
+</ul>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+💡 Tips Profesional
+</h3>
+
+<div style="
+background:#18263f;
+padding:25px;
+border-radius:15px;">
+
+<p>
+
+✔ Selalu lihat kalender ekonomi setiap hari.
+
+<br><br>
+
+✔ Perhatikan berita dengan dampak <strong>High Impact</strong>.
+
+<br><br>
+
+✔ Hindari entry 10–15 menit sebelum berita besar.
+
+<br><br>
+
+✔ Tunggu volatilitas mereda sebelum mengambil posisi.
+
+<br><br>
+
+✔ Ikuti arah market setelah konfirmasi, jangan menebak hasil berita.
+
+</p>
+
+</div>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+📝 Ringkasan BAB 2
+</h3>
+
+<p style="line-height:2;">
+
+Berita ekonomi memengaruhi nilai mata uang USD.
+Karena Gold diperdagangkan menggunakan USD, maka perubahan nilai USD akan berdampak langsung pada harga Gold.
+
+Memahami hubungan ini membantu trader membuat keputusan yang lebih baik dan menghindari entry saat risiko sedang tinggi.
+
+</p>
+
+<div style="display:flex;justify-content:space-between;margin-top:40px;">
+
+<a href="#bab1" class="btn">
+⬅ BAB 1
+</a>
+
+<a href="#bab3" class="btn">
+BAB 3 ➜
+</a>
+
+</div>
+
+</div>
+<!-- ========================= -->
+<!-- BAB 3 -->
+<!-- ========================= -->
+
+<div class="card" id="bab3">
+
+<div style="
+display:inline-block;
+background:#FFD700;
+color:#000;
+padding:8px 18px;
+border-radius:30px;
+font-weight:bold;
+margin-bottom:20px;">
+📖 BAB 3 dari 9
+</div>
+
+<h2 style="font-size:40px;color:#FFD700;margin-bottom:20px;">
+📅 Mengenal Kalender Ekonomi
+</h2>
+
+<p style="font-size:20px;line-height:2;color:#ddd;">
+
+Kalender Ekonomi (Economic Calendar) adalah jadwal resmi yang menampilkan
+waktu rilis berita ekonomi dari berbagai negara.
+
+Trader profesional selalu mengecek kalender ekonomi sebelum membuka posisi
+agar mengetahui kapan volatilitas tinggi akan terjadi.
+
+</p>
+
+<div style="text-align:center;margin:35px 0;">
+
+<img src="assets/images/economic-calendar.jpg"
+style="width:100%;border-radius:18px;">
+
+<p style="margin-top:12px;color:#999;">
+Contoh tampilan kalender ekonomi.
+</p>
+
+</div>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+Apa Saja yang Ditampilkan?
+</h3>
+
+<ul style="margin-left:30px;line-height:2;">
+
+<li>🕒 Waktu rilis berita.</li>
+
+<li>🌍 Negara asal berita.</li>
+
+<li>📊 Nama berita ekonomi.</li>
+
+<li>📈 Forecast (Perkiraan).</li>
+
+<li>📉 Previous (Data sebelumnya).</li>
+
+<li>🔥 Tingkat dampak berita.</li>
+
+</ul>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+Tingkat Dampak Berita
+</h3>
+
+<div style="
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:25px;">
+
+<div style="background:#123226;padding:20px;border-radius:12px;">
+<h3>🟢 Low Impact</h3>
+<p>
+Biasanya hanya memberikan pengaruh kecil terhadap market.
+</p>
+</div>
+
+<div style="background:#4a3b10;padding:20px;border-radius:12px;">
+<h3>🟠 Medium Impact</h3>
+<p>
+Dapat menyebabkan pergerakan market yang cukup signifikan.
+</p>
+</div>
+
+<div style="background:#4b1717;padding:20px;border-radius:12px;">
+<h3>🔴 High Impact</h3>
+<p>
+Sering menyebabkan lonjakan harga yang sangat cepat dan volatil.
+</p>
+</div>
+
+</div>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+Berita High Impact yang Wajib Diketahui
+</h3>
+
+<table style="
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+text-align:left;">
+
+<tr style="background:#FFD700;color:#000;">
+<th style="padding:12px;">Berita</th>
+<th style="padding:12px;">Dampak</th>
+</tr>
+
+<tr>
+<td style="padding:12px;border-bottom:1px solid #243248;">NFP</td>
+<td style="padding:12px;border-bottom:1px solid #243248;">Sangat Tinggi</td>
+</tr>
+
+<tr>
+<td style="padding:12px;border-bottom:1px solid #243248;">CPI</td>
+<td style="padding:12px;border-bottom:1px solid #243248;">Sangat Tinggi</td>
+</tr>
+
+<tr>
+<td style="padding:12px;border-bottom:1px solid #243248;">FOMC</td>
+<td style="padding:12px;border-bottom:1px solid #243248;">Ekstrem</td>
+</tr>
+
+<tr>
+<td style="padding:12px;border-bottom:1px solid #243248;">Interest Rate</td>
+<td style="padding:12px;border-bottom:1px solid #243248;">Ekstrem</td>
+</tr>
+
+<tr>
+<td style="padding:12px;">PPI</td>
+<td style="padding:12px;">Tinggi</td>
+</tr>
+
+</table>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+💡 Tips Profesional
+</h3>
+
+<div style="
+background:#18263f;
+padding:25px;
+border-radius:15px;">
+
+<p>
+
+✔ Cek kalender ekonomi setiap pagi.
+
+<br><br>
+
+✔ Fokus pada berita dengan ikon merah (High Impact).
+
+<br><br>
+
+✔ Catat jam rilis berita agar tidak entry tepat sebelum news.
+
+<br><br>
+
+✔ Gunakan kalender ekonomi sebagai bagian dari rutinitas analisis harian.
+
+</p>
+
+</div>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+📝 Ringkasan BAB 3
+</h3>
+
+<p>
+
+Kalender ekonomi adalah alat wajib bagi trader.
+Dengan mengetahui jadwal berita dan tingkat dampaknya,
+Anda dapat menghindari entry pada waktu yang berisiko tinggi
+dan merencanakan trading dengan lebih baik.
+
+</p>
+
+<div style="display:flex;justify-content:space-between;margin-top:40px;">
+
+<a href="#bab2" class="btn">
+⬅ BAB 2
+</a>
+
+<a href="#bab4" class="btn">
+BAB 4 ➜
+</a>
+
+</div>
+
+</div>
+<!-- ========================= -->
+<!-- BAB 4 -->
+<!-- ========================= -->
+
+<div class="card" id="bab4">
+
+<div style="
+display:inline-block;
+background:#FFD700;
+color:#000;
+padding:8px 18px;
+border-radius:30px;
+font-weight:bold;
+margin-bottom:20px;">
+📖 BAB 4 dari 9
+</div>
+
+<h2 style="font-size:40px;color:#FFD700;margin-bottom:20px;">
+📊 Cara Membaca Actual, Forecast & Previous
+</h2>
+
+<p style="font-size:20px;line-height:2;color:#ddd;">
+
+Semua berita ekonomi memiliki tiga angka penting yang wajib dipahami oleh trader.
+
+Jangan hanya melihat nama berita, tetapi pahami bagaimana hasil berita dibandingkan dengan perkiraan pasar.
+
+</p>
+
+<div style="text-align:center;margin:35px 0;">
+
+<img src="assets/images/actual-forecast-previous.jpg"
+style="width:100%;border-radius:18px;">
+
+<p style="margin-top:12px;color:#999;">
+Contoh tampilan kolom Actual, Forecast dan Previous.
+</p>
+
+</div>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+🟢 Previous
+</h3>
+
+<p>
+
+Previous adalah hasil berita periode sebelumnya.
+
+Angka ini digunakan sebagai pembanding dengan data terbaru.
+
+</p>
+
+<hr style="margin:35px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+🟡 Forecast
+</h3>
+
+<p>
+
+Forecast adalah perkiraan para analis sebelum berita dirilis.
+
+Market biasanya sudah memperhitungkan angka ini.
+
+</p>
+
+<hr style="margin:35px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+🔴 Actual
+</h3>
+
+<p>
+
+Actual adalah hasil resmi yang baru dirilis.
+
+Inilah angka yang paling memengaruhi pergerakan market.
+
+Semakin jauh Actual dari Forecast, biasanya semakin besar volatilitas market.
+
+</p>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+Contoh NFP
+</h3>
+
+<table style="width:100%;border-collapse:collapse;margin-top:20px;">
+
+<tr style="background:#FFD700;color:#000;">
+
+<th style="padding:12px;">Previous</th>
+
+<th style="padding:12px;">Forecast</th>
+
+<th style="padding:12px;">Actual</th>
+
+</tr>
+
+<tr>
+
+<td style="padding:12px;border-bottom:1px solid #243248;">120K</td>
+
+<td style="padding:12px;border-bottom:1px solid #243248;">140K</td>
+
+<td style="padding:12px;border-bottom:1px solid #243248;">210K</td>
+
+</tr>
+
+</table>
+
+<br>
+
+<div style="
+background:#18263f;
+padding:25px;
+border-radius:15px;">
+
+<p>
+
+Karena Actual (210K) jauh lebih tinggi daripada Forecast (140K),
+ekonomi Amerika dianggap lebih kuat.
+
+Akibatnya:
+
+</p>
+
+<ul style="margin-left:30px;line-height:2;">
+
+<li>📈 USD Menguat</li>
+
+<li>📉 Gold Cenderung Turun</li>
+
+</ul>
+
+</div>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+Contoh Sebaliknya
+</h3>
+
+<table style="width:100%;border-collapse:collapse;margin-top:20px;">
+
+<tr style="background:#FFD700;color:#000;">
+
+<th style="padding:12px;">Previous</th>
+
+<th style="padding:12px;">Forecast</th>
+
+<th style="padding:12px;">Actual</th>
+
+</tr>
+
+<tr>
+
+<td style="padding:12px;border-bottom:1px solid #243248;">180K</td>
+
+<td style="padding:12px;border-bottom:1px solid #243248;">170K</td>
+
+<td style="padding:12px;border-bottom:1px solid #243248;">90K</td>
+
+</tr>
+
+</table>
+
+<br>
+
+<div style="
+background:#18263f;
+padding:25px;
+border-radius:15px;">
+
+<p>
+
+Karena Actual jauh lebih rendah daripada Forecast,
+ekonomi Amerika dianggap melemah.
+
+Akibatnya:
+
+</p>
+
+<ul style="margin-left:30px;line-height:2;">
+
+<li>📉 USD Melemah</li>
+
+<li>📈 Gold Cenderung Naik</li>
+
+</ul>
+
+</div>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+💡 Tips Profesional
+</h3>
+
+<ul style="margin-left:30px;line-height:2;">
+
+<li>✅ Fokus pada kolom Actual.</li>
+
+<li>✅ Bandingkan dengan Forecast.</li>
+
+<li>✅ Jangan hanya melihat warna merah di kalender.</li>
+
+<li>✅ Lihat reaksi market setelah berita dirilis.</li>
+
+</ul>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+📝 Ringkasan BAB 4
+</h3>
+
+<p>
+
+Pergerakan market bukan ditentukan oleh nama berita saja,
+tetapi oleh perbedaan antara Actual dan Forecast.
+
+Semakin besar selisihnya, biasanya semakin besar pula pergerakan harga.
+
+</p>
+
+<div style="display:flex;justify-content:space-between;margin-top:40px;">
+
+<a href="#bab3" class="btn">
+⬅ BAB 3
+</a>
+
+<a href="#bab5" class="btn">
+BAB 5 ➜
+</a>
+
+</div>
+
+</div>
+<!-- ========================= -->
+<!-- BAB 5 -->
+<!-- ========================= -->
+
+<div class="card" id="bab5">
+
+<div style="
+display:inline-block;
+background:#FFD700;
+color:#000;
+padding:8px 18px;
+border-radius:30px;
+font-weight:bold;
+margin-bottom:20px;">
+📖 BAB 5 dari 9
+</div>
+
+<h2 style="font-size:40px;color:#FFD700;margin-bottom:20px;">
+💼 Non-Farm Payroll (NFP)
+</h2>
+
+<p style="font-size:20px;line-height:2;color:#ddd;">
+
+Non-Farm Payroll (NFP) adalah laporan jumlah tenaga kerja baru di Amerika Serikat
+(setelah mengecualikan sektor pertanian).
+
+Data ini diterbitkan setiap hari Jumat pertama setiap bulan dan merupakan salah satu
+berita ekonomi dengan dampak terbesar terhadap USD dan XAUUSD (Gold).
+
+</p>
+
+<div style="text-align:center;margin:35px 0;">
+
+<img src="assets/images/nfp.jpg"
+style="width:100%;border-radius:18px;">
+
+<p style="margin-top:12px;color:#999;">
+Ilustrasi rilis data NFP dan reaksi market.
+</p>
+
+</div>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+📌 Mengapa NFP Sangat Penting?
+</h3>
+
+<ul style="margin-left:30px;line-height:2;">
+
+<li>✅ Menggambarkan kondisi pasar tenaga kerja Amerika.</li>
+
+<li>✅ Menjadi acuan kebijakan Federal Reserve.</li>
+
+<li>✅ Sangat memengaruhi nilai USD.</li>
+
+<li>✅ Menyebabkan volatilitas tinggi pada Gold.</li>
+
+<li>✅ Menjadi perhatian trader dan institusi di seluruh dunia.</li>
+
+</ul>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+📊 Dampak NFP terhadap Gold
+</h3>
+
+<table style="width:100%;border-collapse:collapse;margin-top:20px;">
+
+<tr style="background:#FFD700;color:#000;">
+<th style="padding:12px;">Hasil NFP</th>
+<th style="padding:12px;">USD</th>
+<th style="padding:12px;">Gold</th>
+</tr>
+
+<tr>
+<td style="padding:12px;border-bottom:1px solid #243248;">Lebih Baik dari Forecast</td>
+<td style="padding:12px;border-bottom:1px solid #243248;">📈 Menguat</td>
+<td style="padding:12px;border-bottom:1px solid #243248;">📉 Turun</td>
+</tr>
+
+<tr>
+<td style="padding:12px;">Lebih Buruk dari Forecast</td>
+<td style="padding:12px;">📉 Melemah</td>
+<td style="padding:12px;">📈 Naik</td>
+</tr>
+
+</table>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+🎯 Contoh Kasus
+</h3>
+
+<div style="
+background:#18263f;
+padding:25px;
+border-radius:15px;">
+
+<p>
+
+Forecast : <strong>160K</strong>
+
+<br><br>
+
+Actual : <strong>245K</strong>
+
+<br><br>
+
+Karena Actual jauh lebih tinggi dari Forecast,
+USD menguat sehingga Gold biasanya mengalami tekanan turun.
+
+</p>
+
+</div>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+⚠ Risiko Trading Saat NFP
+</h3>
+
+<ul style="margin-left:30px;line-height:2;">
+
+<li>❌ Spread melebar.</li>
+
+<li>❌ Slippage.</li>
+
+<li>❌ Candle bergerak sangat cepat.</li>
+
+<li>❌ Stop Loss mudah tersentuh.</li>
+
+<li>❌ Fake breakout sering terjadi.</li>
+
+</ul>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+💡 Strategi Profesional
+</h3>
+
+<div style="
+background:#10243d;
+padding:25px;
+border-left:6px solid #FFD700;
+border-radius:15px;">
+
+<p>
+
+✔ Jangan entry 5–10 menit sebelum NFP.
+
+<br><br>
+
+✔ Tunggu hasil Actual keluar.
+
+<br><br>
+
+✔ Lihat apakah hasil lebih baik atau lebih buruk dari Forecast.
+
+<br><br>
+
+✔ Tunggu arah market jelas sebelum membuka posisi.
+
+<br><br>
+
+✔ Jangan FOMO mengejar candle pertama.
+
+</p>
+
+</div>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+📝 Ringkasan BAB 5
+</h3>
+
+<p>
+
+NFP adalah berita yang paling sering menyebabkan pergerakan besar pada Gold.
+Memahami hubungan antara Actual, Forecast, dan reaksi market akan membantu Anda
+mengambil keputusan trading dengan lebih disiplin.
+
+</p>
+
+<div style="display:flex;justify-content:space-between;margin-top:40px;">
+
+<a href="#bab4" class="btn">
+⬅ BAB 4
+</a>
+
+<a href="#bab6" class="btn">
+BAB 6 ➜
+</a>
+
+</div>
+
+</div>
+<!-- ========================= -->
+<!-- BAB 6 -->
+<!-- ========================= -->
+
+<div class="card" id="bab6">
+
+<div style="
+display:inline-block;
+background:#FFD700;
+color:#000;
+padding:8px 18px;
+border-radius:30px;
+font-weight:bold;
+margin-bottom:20px;">
+📖 BAB 6 dari 9
+</div>
+
+<h2 style="font-size:40px;color:#FFD700;margin-bottom:20px;">
+🔥 Consumer Price Index (CPI)
+</h2>
+
+<p style="font-size:20px;line-height:2;color:#ddd;">
+
+Consumer Price Index (CPI) adalah data yang menunjukkan perubahan harga
+barang dan jasa yang dibeli masyarakat.
+
+CPI digunakan untuk mengukur tingkat inflasi di Amerika Serikat.
+
+Semakin tinggi inflasi, semakin besar kemungkinan Federal Reserve
+menaikkan suku bunga.
+
+</p>
+
+<div style="text-align:center;margin:35px 0;">
+
+<img src="assets/images/cpi.jpg"
+style="width:100%;border-radius:18px;">
+
+<p style="margin-top:12px;color:#999;">
+Ilustrasi rilis data CPI Amerika Serikat.
+</p>
+
+</div>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+📌 Mengapa CPI Penting?
+</h3>
+
+<ul style="margin-left:30px;line-height:2;">
+
+<li>✅ Mengukur inflasi.</li>
+
+<li>✅ Menjadi dasar keputusan The Fed.</li>
+
+<li>✅ Sangat memengaruhi USD.</li>
+
+<li>✅ Berdampak besar terhadap Gold.</li>
+
+</ul>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+📊 Dampak CPI terhadap Gold
+</h3>
+
+<table style="width:100%;border-collapse:collapse;margin-top:20px;">
+
+<tr style="background:#FFD700;color:#000;">
+
+<th style="padding:12px;">Hasil CPI</th>
+
+<th style="padding:12px;">USD</th>
+
+<th style="padding:12px;">Gold</th>
+
+</tr>
+
+<tr>
+
+<td style="padding:12px;border-bottom:1px solid #243248;">
+Lebih Tinggi dari Forecast
+</td>
+
+<td style="padding:12px;border-bottom:1px solid #243248;">
+📈 Menguat
+</td>
+
+<td style="padding:12px;border-bottom:1px solid #243248;">
+📉 Turun
+</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:12px;">
+Lebih Rendah dari Forecast
+</td>
+
+<td style="padding:12px;">
+📉 Melemah
+</td>
+
+<td style="padding:12px;">
+📈 Naik
+</td>
+
+</tr>
+
+</table>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+🎯 Contoh Kasus
+</h3>
+
+<div style="
+background:#18263f;
+padding:25px;
+border-radius:15px;">
+
+<p>
+
+Forecast : <strong>2.9%</strong>
+
+<br><br>
+
+Actual : <strong>3.4%</strong>
+
+<br><br>
+
+Karena inflasi lebih tinggi dari perkiraan,
+USD biasanya menguat dan Gold mengalami tekanan turun.
+
+</p>
+
+</div>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+⚠ Hal yang Perlu Diperhatikan
+</h3>
+
+<ul style="margin-left:30px;line-height:2;">
+
+<li>❌ Jangan hanya melihat angka Actual.</li>
+
+<li>❌ Bandingkan dengan Forecast.</li>
+
+<li>❌ Lihat juga reaksi pasar setelah rilis.</li>
+
+<li>❌ Hindari entry terlalu cepat.</li>
+
+</ul>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+💡 Tips Profesional
+</h3>
+
+<div style="
+background:#10243d;
+padding:25px;
+border-left:6px solid #FFD700;
+border-radius:15px;">
+
+<p>
+
+✔ CPI sering menggerakkan market hampir sebesar NFP.
+
+<br><br>
+
+✔ Tunggu candle pertama selesai.
+
+<br><br>
+
+✔ Ikuti arah market setelah konfirmasi.
+
+<br><br>
+
+✔ Jangan trading berdasarkan tebakan.
+
+</p>
+
+</div>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+📝 Ringkasan BAB 6
+</h3>
+
+<p>
+
+CPI adalah indikator utama inflasi.
+Trader profesional selalu membandingkan Actual dan Forecast
+untuk menentukan kemungkinan arah USD dan Gold.
+
+</p>
+
+<div style="display:flex;justify-content:space-between;margin-top:40px;">
+
+<a href="#bab5" class="btn">
+⬅ BAB 5
+</a>
+
+<a href="#bab7" class="btn">
+BAB 7 ➜
+</a>
+
+</div>
+
+</div>
+<!-- ========================= -->
+<!-- BAB 7 -->
+<!-- ========================= -->
+
+<div class="card" id="bab7">
+
+<div style="
+display:inline-block;
+background:#FFD700;
+color:#000;
+padding:8px 18px;
+border-radius:30px;
+font-weight:bold;
+margin-bottom:20px;">
+📖 BAB 7 dari 9
+</div>
+
+<h2 style="font-size:40px;color:#FFD700;margin-bottom:20px;">
+🏦 FOMC & Interest Rate
+</h2>
+
+<p style="font-size:20px;line-height:2;color:#ddd;">
+
+FOMC (Federal Open Market Committee) adalah komite di dalam Federal Reserve
+yang menentukan kebijakan moneter Amerika Serikat, termasuk suku bunga (Interest Rate).
+
+Keputusan FOMC merupakan salah satu berita dengan dampak terbesar terhadap
+USD dan XAUUSD.
+
+</p>
+
+<div style="text-align:center;margin:35px 0;">
+
+<img src="assets/images/fomc.jpg"
+style="width:100%;border-radius:18px;">
+
+<p style="margin-top:12px;color:#999;">
+Ilustrasi rapat Federal Reserve (FOMC).
+</p>
+
+</div>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+📌 Apa itu Interest Rate?
+</h3>
+
+<p>
+
+Interest Rate adalah suku bunga acuan yang ditetapkan oleh Federal Reserve.
+
+Perubahan suku bunga memengaruhi nilai USD, inflasi, pinjaman, investasi,
+dan akhirnya harga Gold.
+
+</p>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+📊 Dampak Suku Bunga terhadap Gold
+</h3>
+
+<table style="width:100%;border-collapse:collapse;margin-top:20px;">
+
+<tr style="background:#FFD700;color:#000;">
+<th style="padding:12px;">Keputusan</th>
+<th style="padding:12px;">USD</th>
+<th style="padding:12px;">Gold</th>
+</tr>
+
+<tr>
+<td style="padding:12px;border-bottom:1px solid #243248;">
+Suku Bunga Naik
+</td>
+<td style="padding:12px;border-bottom:1px solid #243248;">
+📈 Menguat
+</td>
+<td style="padding:12px;border-bottom:1px solid #243248;">
+📉 Turun
+</td>
+</tr>
+
+<tr>
+<td style="padding:12px;border-bottom:1px solid #243248;">
+Suku Bunga Tetap
+</td>
+<td style="padding:12px;border-bottom:1px solid #243248;">
+➡️ Netral
+</td>
+<td style="padding:12px;border-bottom:1px solid #243248;">
+➡️ Menunggu Reaksi
+</td>
+</tr>
+
+<tr>
+<td style="padding:12px;">
+Suku Bunga Turun
+</td>
+<td style="padding:12px;">
+📉 Melemah
+</td>
+<td style="padding:12px;">
+📈 Naik
+</td>
+</tr>
+
+</table>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+🎯 Contoh Kasus
+</h3>
+
+<div style="
+background:#18263f;
+padding:25px;
+border-radius:15px;">
+
+<p>
+
+The Fed menaikkan suku bunga dari
+
+<strong>4.50%</strong>
+
+menjadi
+
+<strong>4.75%</strong>
+
+<br><br>
+
+Investor lebih tertarik membeli USD karena imbal hasil meningkat.
+
+Akibatnya:
+
+</p>
+
+<ul style="margin-left:30px;line-height:2;">
+
+<li>📈 USD Menguat</li>
+
+<li>📉 Gold Turun</li>
+
+</ul>
+
+</div>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+🎤 Pidato Ketua The Fed
+</h3>
+
+<p>
+
+Selain keputusan suku bunga, pidato Ketua Federal Reserve juga sering
+menggerakkan market.
+
+Jika pidatonya bernada hawkish (mendukung suku bunga tinggi),
+USD cenderung menguat.
+
+Jika bernada dovish (mendukung suku bunga rendah),
+Gold cenderung menguat.
+
+</p>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+⚠ Kesalahan Pemula
+</h3>
+
+<ul style="margin-left:30px;line-height:2;">
+
+<li>❌ Hanya melihat keputusan suku bunga.</li>
+
+<li>❌ Mengabaikan konferensi pers FOMC.</li>
+
+<li>❌ Entry tanpa menunggu arah market.</li>
+
+<li>❌ Menggunakan lot terlalu besar.</li>
+
+</ul>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+💡 Tips Profesional
+</h3>
+
+<div style="
+background:#10243d;
+padding:25px;
+border-left:6px solid #FFD700;
+border-radius:15px;">
+
+<p>
+
+✔ Perhatikan keputusan suku bunga dan pernyataan resmi The Fed.
+
+<br><br>
+
+✔ Jangan hanya melihat angka, baca juga nada pidato Ketua The Fed.
+
+<br><br>
+
+✔ Tunggu volatilitas mereda sebelum entry.
+
+<br><br>
+
+✔ Gunakan Time Frame H1 atau H4 untuk melihat arah trend setelah FOMC.
+
+</p>
+
+</div>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+📝 Ringkasan BAB 7
+</h3>
+
+<p>
+
+FOMC dan Interest Rate termasuk berita yang paling berpengaruh terhadap USD dan Gold.
+Trader profesional selalu memperhatikan keputusan suku bunga, konferensi pers,
+dan reaksi pasar sebelum mengambil keputusan trading.
+
+</p>
+
+<div style="display:flex;justify-content:space-between;margin-top:40px;">
+
+<a href="#bab6" class="btn">
+⬅ BAB 6
+</a>
+
+<a href="#bab8" class="btn">
+BAB 8 ➜
+</a>
+
+</div>
+
+</div>
+<!-- ========================= -->
+<!-- BAB 8 -->
+<!-- ========================= -->
+
+<div class="card" id="bab8">
+
+<div style="
+display:inline-block;
+background:#FFD700;
+color:#000;
+padding:8px 18px;
+border-radius:30px;
+font-weight:bold;
+margin-bottom:20px;">
+📖 BAB 8 dari 9
+</div>
+
+<h2 style="font-size:40px;color:#FFD700;margin-bottom:20px;">
+🎯 Strategi Trading Saat News
+</h2>
+
+<p style="font-size:20px;line-height:2;color:#ddd;">
+
+Trading saat berita membutuhkan disiplin dan kesabaran.
+Banyak trader mengalami kerugian bukan karena salah analisis,
+tetapi karena entry terlalu cepat sebelum market menentukan arah.
+
+Trader profesional lebih memilih menunggu konfirmasi daripada
+menebak arah market.
+
+</p>
+
+<div style="text-align:center;margin:35px 0;">
+
+<img src="assets/images/news-strategy.jpg"
+style="width:100%;border-radius:18px;">
+
+<p style="margin-top:12px;color:#999;">
+Strategi trading setelah berita dirilis.
+</p>
+
+</div>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+⏰ Sebelum News
+</h3>
+
+<ul style="margin-left:30px;line-height:2;">
+
+<li>✅ Cek kalender ekonomi.</li>
+
+<li>✅ Catat jam rilis berita.</li>
+
+<li>✅ Kurangi ukuran lot jika tetap ingin trading.</li>
+
+<li>✅ Hindari entry 5–10 menit sebelum berita.</li>
+
+</ul>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+🚀 Saat News Dirilis
+</h3>
+
+<ul style="margin-left:30px;line-height:2;">
+
+<li>⚠ Jangan langsung entry.</li>
+
+<li>⚠ Spread biasanya melebar.</li>
+
+<li>⚠ Candle dapat bergerak puluhan hingga ratusan pip dalam hitungan detik.</li>
+
+<li>⚠ Tunggu arah market mulai jelas.</li>
+
+</ul>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+📈 Setelah News
+</h3>
+
+<div style="
+background:#18263f;
+padding:25px;
+border-radius:15px;">
+
+<p>
+
+✔ Tunggu candle konfirmasi.
+
+<br><br>
+
+✔ Identifikasi arah trend baru.
+
+<br><br>
+
+✔ Cari entry sesuai Market Structure.
+
+<br><br>
+
+✔ Gunakan Risk Reward minimal 1:2.
+
+</p>
+
+</div>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+❌ Kesalahan yang Sering Terjadi
+</h3>
+
+<ul style="margin-left:30px;line-height:2;">
+
+<li>❌ FOMO mengejar candle pertama.</li>
+
+<li>❌ Entry sebelum data Actual keluar.</li>
+
+<li>❌ Lot terlalu besar.</li>
+
+<li>❌ Tidak memasang Stop Loss.</li>
+
+<li>❌ Melawan arah trend setelah news.</li>
+
+</ul>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+💡 Tips Profesional
+</h3>
+
+<div style="
+background:#10243d;
+padding:25px;
+border-left:6px solid #FFD700;
+border-radius:15px;">
+
+<p>
+
+✔ Fokus pada kualitas entry, bukan kecepatan.
+
+<br><br>
+
+✔ Lebih baik kehilangan satu peluang daripada kehilangan modal.
+
+<br><br>
+
+✔ Selalu gabungkan News Trading dengan Market Structure dan Price Action.
+
+<br><br>
+
+✔ Jangan trading karena emosi.
+
+</p>
+
+</div>
+
+<hr style="margin:40px 0;border:1px solid #243248;">
+
+<h3 style="color:#FFD700;">
+📌 Ringkasan BAB 8
+</h3>
+
+<p>
+
+Strategi terbaik saat news bukanlah menjadi yang tercepat,
+tetapi menjadi yang paling disiplin.
+Tunggu konfirmasi, ikuti arah market, dan selalu gunakan manajemen risiko.
+
+</p>
+
+<div style="display:flex;justify-content:space-between;margin-top:40px;">
+
+<a href="#bab7" class="btn">
+⬅ BAB 7
+</a>
+
+<a href="#bab9" class="btn">
+BAB 9 ➜
+</a>
+
+</div>
+
+</div>
