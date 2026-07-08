@@ -20,142 +20,326 @@ font-family:'Poppins',sans-serif;
 
 body{
 background:#08111f;
-color:white;
+color:#fff;
+line-height:1.6;
 }
+
+/* ================= HEADER ================= */
 
 header{
 background:#0d1626;
-padding:18px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
+padding:15px 5%;
 position:sticky;
 top:0;
-z-index:999;
+z-index:1000;
+box-shadow:0 5px 15px rgba(0,0,0,.35);
 }
 
-.logo{
+.header-container{
+max-width:1300px;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.logo-area{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo-img{
+width:60px;
+height:60px;
+border-radius:50%;
+border:2px solid #FFD700;
+}
+
+.logo-text h1{
 font-size:28px;
-font-weight:700;
 color:#FFD700;
+}
+
+.logo-text p{
+font-size:13px;
+color:#ddd;
 }
 
 nav{
 display:flex;
-gap:30px;
+gap:35px;
+margin-left:auto;
 }
 
 nav a{
-color:white;
+color:#fff;
 text-decoration:none;
 font-weight:600;
 transition:.3s;
 }
 
-nav a:hover{
+nav a:hover,
+nav a.active{
 color:#FFD700;
 }
 
+.menu-toggle{
+display:none;
+font-size:34px;
+cursor:pointer;
+color:#FFD700;
+user-select:none;
+z-index:1002;
+}
+
+#overlay{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.5);
+z-index:998;
+}
+
+#overlay.show{
+display:block;
+}
+
+/* ================= HERO ================= */
+
 .hero{
-min-height:85vh;
+
+min-height:55vh;
+
 display:flex;
+
 flex-direction:column;
+
 justify-content:center;
+
 align-items:center;
+
 text-align:center;
-padding:40px 20px;
+
+padding:80px 10%;
+
+background:
+
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),
+
+url("https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1600&q=80");
+
+background-size:cover;
+
+background-position:center;
+
 }
 
 .hero h1{
-font-size:55px;
-margin-bottom:15px;
+
+font-size:54px;
+
+margin-bottom:20px;
+
 }
 
 .hero span{
+
 color:#FFD700;
+
 }
 
 .hero p{
-max-width:700px;
-color:#d1d5db;
+
+max-width:800px;
+
 font-size:18px;
-line-height:1.8;
-margin-bottom:45px;
+
+color:#ddd;
+
+margin-bottom:35px;
+
 }
 
-.social{
-display:flex;
-justify-content:center;
-gap:30px;
-flex-wrap:wrap;
-}
+.btn{
 
-.social a{
-width:90px;
-height:90px;
-border-radius:50%;
-background:#111d31;
-display:flex;
-align-items:center;
-justify-content:center;
-transition:.35s;
-box-shadow:0 10px 25px rgba(0,0,0,.35);
-}
+display:inline-block;
 
-.social a:hover{
+padding:15px 35px;
+
 background:#FFD700;
-transform:translateY(-8px) scale(1.08);
+
+color:#000;
+
+font-weight:bold;
+
+text-decoration:none;
+
+border-radius:50px;
+
+transition:.3s;
+
 }
 
-.social img{
-width:45px;
-height:45px;
+.btn:hover{
+
+transform:translateY(-3px);
+
 }
 
-.info{
-margin-top:45px;
-font-size:18px;
-color:#d1d5db;
-line-height:2;
+/* ================= CONTENT ================= */
+
+.container{
+
+max-width:1200px;
+
+margin:auto;
+
+padding:70px 10%;
+
+}
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+.card{
+
+background:#111d31;
+
+padding:30px;
+
+border-radius:18px;
+
+text-align:center;
+
+box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.card h3{
+
+color:#FFD700;
+
+margin:20px 0 10px;
+
+}
+
+.card p{
+
+color:#ddd;
+
+}
+
+.icon{
+
+font-size:55px;
+
+color:#FFD700;
+
 }
 
 footer{
+
 background:#050b16;
+
 padding:30px;
+
 text-align:center;
-margin-top:60px;
+
+margin-top:50px;
+
 color:#cbd5e1;
+
 }
+
+/* ================= MOBILE ================= */
 
 @media(max-width:768px){
 
-header{
-flex-direction:column;
-gap:15px;
+.menu-toggle{
+
+display:block;
+
+}
+
+.logo-text h1{
+
+font-size:22px;
+
+}
+
+.logo-text p{
+
+font-size:11px;
+
 }
 
 nav{
-flex-wrap:wrap;
-justify-content:center;
-gap:18px;
+
+display:flex;
+
+flex-direction:column;
+
+position:fixed;
+
+top:0;
+
+left:-270px;
+
+width:250px;
+
+height:100vh;
+
+background:#0d1626;
+
+padding-top:90px;
+
+transition:.35s;
+
+z-index:999;
+
+}
+
+nav.show{
+
+left:0;
+
+}
+
+nav a{
+
+padding:18px 25px;
+
 }
 
 .hero h1{
+
 font-size:38px;
+
 }
 
 .hero p{
+
 font-size:16px;
-}
 
-.social a{
-width:75px;
-height:75px;
-}
-
-.social img{
-width:38px;
-height:38px;
 }
 
 }
@@ -168,78 +352,231 @@ height:38px;
 
 <header>
 
-<div class="logo">
-📈 Family CS20
+<div class="header-container">
+
+<div class="menu-toggle" id="toggle" onclick="toggleMenu()">☰</div>
+
+<div class="logo-area">
+
+<img src="logo.jpeg" class="logo-img">
+
+<div class="logo-text">
+
+<h1>FAMILY CS20</h1>
+
+<p>BELAJAR TRADING FOREX & GOLD</p>
+
 </div>
 
-<nav>
+</div>
 
-<a href="index.html">Home</a>
+<nav id="menu">
 
-<a href="belajar.html">Belajar</a>
+<a href="index.html">🏠 HOME</a>
 
-<a href="analisa.html">Analisa</a>
+<a href="belajar.html">📚 BELAJAR</a>
 
-<a href="kontak.html">Kontak</a>
+<a href="analisa.html">📈 ANALISA</a>
+
+<a href="kontak.html" class="active">📞 KONTAK</a>
 
 </nav>
 
+</div>
+
+<div id="overlay" onclick="toggleMenu()"></div>
+
 </header>
+<!-- ================= HERO ================= -->
 
 <section class="hero">
 
-<h1>Hubungi <span>Kami</span></h1>
+<h1>
+Hubungi <span>Kami</span>
+</h1>
 
 <p>
-Jika Anda memiliki pertanyaan, ingin belajar trading, atau ingin bekerja sama,
-silakan hubungi kami melalui salah satu media di bawah ini.
+Jika Anda ingin belajar Trading Forex & Gold, berdiskusi,
+atau bekerja sama dengan Family CS20,
+silakan hubungi kami melalui media berikut.
 </p>
 
-<div class="social">
-
-<a href="https://wa.me/6285879379423" target="_blank">
-<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+<a href="https://wa.me/6285879379423" target="_blank" class="btn">
+💬 Chat WhatsApp
 </a>
 
-<a href="mailto:dalbotrada@gmail.com">
-<img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
-</a>
+</section>
 
-<a href="https://t.me/codecnt" target="_blank">
-<img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
-</a>
+<!-- ================= KONTAK ================= -->
 
-<a href="https://instagram.com/hamdannn.48" target="_blank">
-<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+<section class="container">
+
+<h2 style="text-align:center;font-size:42px;color:#FFD700;margin-bottom:50px;">
+Hubungi Kami
+</h2>
+
+<div class="grid">
+
+<!-- WhatsApp -->
+
+<div class="card">
+
+<div class="icon">
+💬
+</div>
+
+<h3>WhatsApp</h3>
+
+<p>
+Chat langsung dengan kami melalui WhatsApp.
+</p>
+
+<br>
+
+<a class="btn"
+href="https://wa.me/6285879379423"
+target="_blank">
+Buka WhatsApp
 </a>
 
 </div>
 
-<div class="info">
+<!-- Email -->
 
-<p>📱 WhatsApp : 0858-7937-9423</p>
+<div class="card">
 
-<p>📧 Email : dalbotrada@gmail.com</p>
+<div class="icon">
+📧
+</div>
 
-<p>✈ Telegram : @codecnt</p>
+<h3>Email</h3>
 
-<p>📸 Instagram : @hamdannn.48</p>
+<p>
+dalbotrada@gmail.com
+</p>
+
+<br>
+
+<a class="btn"
+href="mailto:dalbotrada@gmail.com">
+Kirim Email
+</a>
+
+</div>
+
+<!-- Telegram -->
+
+<div class="card">
+
+<div class="icon">
+✈️
+</div>
+
+<h3>Telegram</h3>
+
+<p>
+@codecnt
+</p>
+
+<br>
+
+<a class="btn"
+href="https://t.me/codecnt"
+target="_blank">
+Buka Telegram
+</a>
+
+</div>
+
+<!-- Instagram -->
+
+<div class="card">
+
+<div class="icon">
+📷
+</div>
+
+<h3>Instagram</h3>
+
+<p>
+@hamdannn.48
+</p>
+
+<br>
+
+<a class="btn"
+href="https://instagram.com/hamdannn.48"
+target="_blank">
+Buka Instagram
+</a>
+
+</div>
 
 </div>
 
 </section>
 
+<!-- ================= FOOTER ================= -->
+
 <footer>
 
-<h3>Family CS20 Trading Academy</h3>
-
-<p>Belajar Trading Forex & Gold dari Dasar hingga Mahir</p>
+<h2 style="color:#FFD700;">
+Family CS20 Trading Academy
+</h2>
 
 <p style="margin-top:10px;">
+Belajar Trading Forex & Gold dari Dasar hingga Mahir
+</p>
+
+<p style="margin-top:15px;">
 © 2026 Family CS20. All Rights Reserved.
 </p>
 
 </footer>
+<script>
+
+const menu=document.getElementById("menu");
+const toggle=document.getElementById("toggle");
+const overlay=document.getElementById("overlay");
+
+function toggleMenu(){
+
+menu.classList.toggle("show");
+overlay.classList.toggle("show");
+
+if(menu.classList.contains("show")){
+toggle.innerHTML="✕";
+}else{
+toggle.innerHTML="☰";
+}
+
+}
+
+document.querySelectorAll("#menu a").forEach(link=>{
+
+link.addEventListener("click",()=>{
+
+menu.classList.remove("show");
+overlay.classList.remove("show");
+toggle.innerHTML="☰";
+
+});
+
+});
+
+window.addEventListener("resize",()=>{
+
+if(window.innerWidth>768){
+
+menu.classList.remove("show");
+overlay.classList.remove("show");
+toggle.innerHTML="☰";
+
+}
+
+});
+
+</script>
 
 </body>
 </html>
